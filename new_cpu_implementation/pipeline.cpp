@@ -72,25 +72,65 @@ void clock_cycle(){
 
     // 4. ID Stage: decodes instructions and reads register file
     // Check for RAW Hazards here so we can stall the pipeline (control hazards are also checked for here)
-    if(!pipeline_stall){
-        ID_EX = IF_ID;
-        if(IF_ID.valid){
-            // Extract opCode, src1, src2, dest from IF_ID.instr
-            ID_EX.opcode = IF_ID.instr & 0x7F;
-            ID_EX.src1 = (IF_ID.instr >> 15) & 0x1F;
-            ID_EX.src2 = (IF_ID.instr >> 20) & 0x1F;
+    // RAW Hazard checking
+    bool raw_hazard = false; 
+    if (IF_ID.valid){
+        // Extract the RAW source registers from the instruction waiting in Decode
+        int current_src1 = (IF_ID.instr >> 15) & 0x1F; 
+        int current_src2 = (IF_ID.instr >> 20) & 0x1F;
+        uint32_t current_opcode = IF_ID.instr & 0x7F;
 
-            if(ID_EX.opcode == 0x23){ // SW
-                ID_EX.dest = -1;
+        // Special case handling: like if it's a load word, it doesn't read src2
+        bool uses_src2 = (current_opcode != 0x03);
+
+        // Check against the instruction currently in EXecute (are the registers being used right now)
+        if (ID_EX.valid && ID_EX.dest != -1 && ID_EX.dest != 0){
+            if (ID_EX.dest == current_src1 || (uses_src2 && ID_EX.dest == current_src2)){
+                raw_hazard = true;
+            }
+        }
+
+        // Check against the instruction currently in MEMory
+        if (EX_MEM.valid && EX_MEM.dest != -1 && EX_MEM.dest != 0){
+            if (EX_MEM.dest == current_src1 || (uses_src2 && EX_MEM.dest == current_src2)){
+                raw_hazard = true;
+            }
+        }
+    }
+
+    // the stall signal is directly tied to the raw hazard 
+    pipeline_stall = raw_hazard;
+    
+    if(!pipeline_stall){
+        if(IF_ID.valid){
+            // Parse fields out of the current IF_ID stage latch
+            PipelineLatch next_latch; 
+            next_latch.valid = true; 
+            next_latch.pc = IF_ID.pc;
+            next_latch.instr = IF_ID.instr; 
+            
+            // Extract opCode, src1, src2, dest from IF_ID.instr
+            next_latch.opcode = IF_ID.instr & 0x7F;
+            next_latch.src1 = (IF_ID.instr >> 15) & 0x1F;
+            next_latch.src2 = (IF_ID.instr >> 20) & 0x1F;
+
+            if(next_latch.opcode == 0x23){ // SW
+                next_latch.dest = -1;
             }
             else{
                 // For R-TYPE Instructions (Will implement I-Type soon)
-                ID_EX.dest = (IF_ID.instr >> 7) & 0x1F;
+                next_latch.dest = (IF_ID.instr >> 7) & 0x1F;
             }
 
             // Read from Register File here
-            ID_EX.val1 = RegisterFile[ID_EX.src1];
-            ID_EX.val2 = RegisterFile[ID_EX.src2];
+            next_latch.val1 = RegisterFile[ID_EX.src1];
+            next_latch.val2 = RegisterFile[ID_EX.src2];
+
+            // Pass the complete packet to the output latch boundary
+            ID_EX = next_latch;
+        }
+        else{
+            ID_EX = PipelineLatch();
         }
 
     }
