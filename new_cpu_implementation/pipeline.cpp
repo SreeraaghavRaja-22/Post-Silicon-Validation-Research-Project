@@ -65,8 +65,27 @@ void clock_cycle(){
     // 3. EX Stage: perform operations on ALU
     EX_MEM = ID_EX; 
     if(ID_EX.valid){
+        // Forwarding MUXes for Data Forwarding
+        // Operand 1 -- Assume we aren't writing to a register with our current instruction, then we can snoop a later stage and get that data if it is going to write to that same reg
+        int operand1 = ID_EX.val1; // Stale value from RegFile
+        if (EX_MEM.valid && EX_MEM.dest != -1 && EX_MEM.dest != 0 && EX_MEM.dest == ID_EX.src1){
+            operand1 = EX_MEM.outVal; // Bypass from EX_MEM boundary
+        }
+        else if(MEM_WB.valid && MEM_WB.dest != -1 && MEM_WB.dest != 0 && MEM_WB.dest == ID_EX.src1){
+            operand1 = MEM_WB.outVal; // Bypass from MEM_WB boundary
+        }
+
+        // Operand 2 -- Assume we aren't writing to a register with our current instruction, then we can snoop a later stage and get that data if it is going to write to that same reg
+        int operand2 = ID_EX.val2; // Stale value from RegFile
+        if (EX_MEM.valid && EX_MEM.dest != -1 && EX_MEM.dest != 0 && EX_MEM.dest == ID_EX.src2){
+            operand2 = EX_MEM.outVal; // Bypass from EX_MEM boundary
+        }
+        else if(MEM_WB.valid && MEM_WB.dest != -1 && MEM_WB.dest != 0 && MEM_WB.dest == ID_EX.src2){
+            operand2 = MEM_WB.outVal; // Bypass from MEM_WB boundary
+        }
         if(ID_EX.opcode == 0x33){
-            EX_MEM.outVal = ID_EX.val1 + ID_EX.val2;
+            // EX_MEM.outVal = ID_EX.val1 + ID_EX.val2;
+            EX_MEM.outVal = operand1 + operand2;
         }
     }
 
@@ -81,21 +100,29 @@ void clock_cycle(){
         uint32_t current_opcode = IF_ID.instr & 0x7F;
 
         // Special case handling: like if it's a load word, it doesn't read src2
-        bool uses_src2 = (current_opcode != 0x03);
+        // bool uses_src2 = (current_opcode != 0x03); -- Make this explicit for HLS
+        bool uses_src2 = (current_opcode == 0x23 || current_opcode == 0x33);
 
+        // Only stall for LW
+        if (ID_EX.valid && ID_EX.opcode == 0x03 && ID_EX.dest != -1 && ID_EX.dest != 0){
+            if(ID_EX.dest == current_src1 || uses_src2 && ID_EX.dest == current_src2){
+                raw_hazard = true;
+            }
+        }
+        /** Not necessary because data forwarding should eliminate these stalls
         // Check against the instruction currently in EXecute (are the registers being used right now)
         if (ID_EX.valid && ID_EX.dest != -1 && ID_EX.dest != 0){
             if (ID_EX.dest == current_src1 || (uses_src2 && ID_EX.dest == current_src2)){
                 raw_hazard = true;
             }
         }
-
         // Check against the instruction currently in MEMory
         if (EX_MEM.valid && EX_MEM.dest != -1 && EX_MEM.dest != 0){
             if (EX_MEM.dest == current_src1 || (uses_src2 && EX_MEM.dest == current_src2)){
                 raw_hazard = true;
             }
         }
+    **/
     }
 
     // the stall signal is directly tied to the raw hazard 
@@ -146,4 +173,39 @@ void clock_cycle(){
         IF_ID.valid = true;
         PC += 4; // increment PC by 32 bits
     }
+}
+
+/*********************************     TEST CODE   *********************************/
+uint32_t pack_r_type(uint32_t opcode, uint32_t rs1, uint32_t rs2, uint32_t rd){
+    return opcode | (rd << 7) | (rs1 << 15) | (rs2 << 20); // pack the instruction
+}
+
+int main(){
+    // Seed some initial architectural parameters into the register file
+    RegisterFile[1] = 10;
+    RegisterFile[2] = 20;
+    RegisterFile[4] = 5; 
+
+    // Test Program Loop
+    // Instruction 0: ADD x3, x1, x2 (10 + 20 = 30 -> targeted to x3)
+    InstructionMemory[0] = pack_r_type(0x33, 1, 2, 3);
+
+    // Instruction 1: ADD x5, x3, x4 (Reads x3 immediately! test forwarding)
+    InstructionMemory[1] = pack_r_type(0x33, 3, 4, 5);
+
+    std::cout << "---Starting Pipeline Simulation---" << std::endl;
+
+    // Run for 10 simulated clock cycles
+    for(int cycle = 0; cycle < 10; cycle++){
+        clock_cycle();
+
+        // Print cycle telemetry
+        std::cout << "Cycle: " << cycle + 1
+                  << " | PC: " << PC
+                  << " | Stall: " << (pipeline_stall ? "YES" : "NO")
+                  << " | x3: " << RegisterFile[3]
+                  << " | x5: " << RegisterFile[5] 
+                  << std::endl;
+    }
+    return 0;
 }
