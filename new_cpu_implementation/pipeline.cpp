@@ -10,6 +10,12 @@ struct PipelineLatch {
 
     // Decoded Fields in Instruction
     unsigned int opcode = 0; 
+
+    // adding these fields for R-type instruction decoding
+    // This will help determine between an add, sub, etc.
+    unsigned int funct3 = 0; // Bits 14:12
+    unsigned int funct7 = 0; // Bits 31:25
+
     int src1 = -1;          // src1 reg index
     int src2 = -1;          // src2 reg index
     int dest = -1;          // dest reg index
@@ -85,7 +91,11 @@ void clock_cycle(){
         }
         if(ID_EX.opcode == 0x33){
             // EX_MEM.outVal = ID_EX.val1 + ID_EX.val2;
-            EX_MEM.outVal = operand1 + operand2;
+            // EX_MEM.outVal = operand1 + operand2;
+            switch (ID_EX.funct3) {
+                case 0x0:
+                    if (ID_EX.funct7 == 0x20)
+            }
         }
     }
 
@@ -137,9 +147,11 @@ void clock_cycle(){
             next_latch.instr = IF_ID.instr; 
             
             // Extract opCode, src1, src2, dest from IF_ID.instr
-            next_latch.opcode = IF_ID.instr & 0x7F;
-            next_latch.src1 = (IF_ID.instr >> 15) & 0x1F;
-            next_latch.src2 = (IF_ID.instr >> 20) & 0x1F;
+            next_latch.opcode = IF_ID.instr & 0x7F;             // Bits 6:0
+            next_latch.funct3 = (IF_ID.instr >> 12) & 0x07;     // Bits 14:12
+            next_latch.src1 = (IF_ID.instr >> 15) & 0x1F;       // Bits 19:15
+            next_latch.src2 = (IF_ID.instr >> 20) & 0x1F;       // Bits 24:20
+            next_latch.funct7 = (IF_ID.instr >> 25) & 0x7F;     // Bits 31:25
 
             if(next_latch.opcode == 0x23){ // SW
                 next_latch.dest = -1;
@@ -150,8 +162,8 @@ void clock_cycle(){
             }
 
             // Read from Register File here
-            next_latch.val1 = RegisterFile[ID_EX.src1];
-            next_latch.val2 = RegisterFile[ID_EX.src2];
+            next_latch.val1 = RegisterFile[next_latch.src1];
+            next_latch.val2 = RegisterFile[next_latch.src2];
 
             // Pass the complete packet to the output latch boundary
             ID_EX = next_latch;
@@ -177,7 +189,7 @@ void clock_cycle(){
 
 /*********************************     TEST CODE   *********************************/
 uint32_t pack_r_type(uint32_t opcode, uint32_t rs1, uint32_t rs2, uint32_t rd){
-    return opcode | (rd << 7) | (rs1 << 15) | (rs2 << 20); // pack the instruction
+    return opcode & 0x7F | ((rd & 0x1F) << 7) | ((rs1 & 0x1F) << 15) | ((rs2 & 0x1F) << 20); // pack the instruction
 }
 
 int main(){
