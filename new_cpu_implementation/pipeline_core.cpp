@@ -142,6 +142,18 @@ void clock_cycle(){
                 break;
             }
 
+            case 0x6F: // JAL -- unconditional jump, link register = pc+4
+                aluResult = ID_EX.pc + 4;
+                PC = ID_EX.pc + ID_EX.imm;
+                IF_ID = PipelineLatch();         // squash the wrong-path instruction already fetched
+                break;
+
+            case 0x67: // JALR -- unconditional jump to (rs1+imm) with LSB cleared, link register = pc+4
+                aluResult = ID_EX.pc + 4;
+                PC = (operand1 + ID_EX.imm) & ~1u;
+                IF_ID = PipelineLatch();         // squash the wrong-path instruction already fetched
+                break;
+
             default:
                 break;
         }
@@ -167,10 +179,13 @@ void clock_cycle(){
 
         // Special case handling: like if it's a load word, it doesn't read src2
         bool uses_src2 = (current_opcode == 0x23 || current_opcode == 0x33 || current_opcode == 0x63);
+        // JAL is the only implemented instruction that doesn't read rs1 at all
+        // (its bits[19:15] are part of the immediate, not a register index)
+        bool uses_src1 = (current_opcode != 0x6F);
 
         // Only stall for LW (forwarding handles every other RAW case)
         if (ID_EX.valid && ID_EX.opcode == 0x03 && ID_EX.dest != -1 && ID_EX.dest != 0){
-            if(ID_EX.dest == current_src1 || (uses_src2 && ID_EX.dest == current_src2)){
+            if((uses_src1 && ID_EX.dest == current_src1) || (uses_src2 && ID_EX.dest == current_src2)){
                 raw_hazard = true;
                 hazard_dest = ID_EX.dest;
             }
@@ -221,6 +236,17 @@ void clock_cycle(){
                     next_latch.dest = -1;
                     next_latch.imm = imm_b(IF_ID.instr);
                     break;
+                case 0x6F: // JAL (J-type) -- doesn't read rs1, bits[19:15] are part of the immediate
+                    next_latch.src1 = -1;
+                    next_latch.src2 = -1;
+                    next_latch.dest = (IF_ID.instr >> 7) & 0x1F;
+                    next_latch.imm = imm_j(IF_ID.instr);
+                    break;
+                case 0x67: // JALR (I-type) -- DOES read rs1 as the jump-target base
+                    next_latch.src2 = -1;
+                    next_latch.dest = (IF_ID.instr >> 7) & 0x1F;
+                    next_latch.imm = imm_i(IF_ID.instr);
+                    break;
                 default:
                     next_latch.src2 = -1;
                     next_latch.dest = -1;
@@ -228,8 +254,9 @@ void clock_cycle(){
                     break;
             }
 
-            // Read from Register File here (src1 is always 0/x0-safe since RegisterFile[0] stays 0)
-            next_latch.val1 = RegisterFile[next_latch.src1];
+            // Read from Register File here (src1 is always 0/x0-safe since RegisterFile[0] stays 0,
+            // but JAL sets src1 = -1 since it doesn't read a register, so guard it like val2)
+            next_latch.val1 = (next_latch.src1 != -1) ? RegisterFile[next_latch.src1] : 0;
             next_latch.val2 = (next_latch.src2 != -1) ? RegisterFile[next_latch.src2] : 0;
 
             // Pass the complete packet to the output latch boundary

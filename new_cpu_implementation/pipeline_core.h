@@ -52,6 +52,15 @@ static inline int32_t imm_b(uint32_t instr){
     return sign_extend(imm, 13);
 }
 
+// J-type immediate (JAL): bits [31|19:12|20|30:21] << 1
+static inline int32_t imm_j(uint32_t instr){
+    uint32_t imm = ((instr >> 31) & 0x1)   << 20
+                  | ((instr >> 12) & 0xFF) << 12
+                  | ((instr >> 20) & 0x1)  << 11
+                  | ((instr >> 21) & 0x3FF) << 1;
+    return sign_extend(imm, 21);
+}
+
 // Forwarding-mux source select (traceable Tier-2 debug signal)
 enum ForwardSel { FWD_NONE = 0, FWD_MEM = 1, FWD_WB = 2 };
 

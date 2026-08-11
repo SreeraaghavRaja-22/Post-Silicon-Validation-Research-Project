@@ -56,6 +56,14 @@ uint32_t pack_b_type(uint32_t rs1, uint32_t rs2, int32_t imm, uint32_t funct3){
          | ((rs1 & 0x1F) << 15) | ((rs2 & 0x1F) << 20) | (b10_5 << 25) | (b12 << 31);
 }
 
+uint32_t pack_j_type(uint32_t rd, int32_t imm){
+    uint32_t b20    = (imm >> 20) & 0x1;
+    uint32_t b19_12 = (imm >> 12) & 0xFF;
+    uint32_t b11    = (imm >> 11) & 0x1;
+    uint32_t b10_1  = (imm >> 1)  & 0x3FF;
+    return 0x6F | ((rd & 0x1F) << 7) | (b19_12 << 12) | (b11 << 20) | (b10_1 << 21) | (b20 << 31);
+}
+
 int main(){
     // Seed some initial architectural parameters into the register file
     RegisterFile[1] = 10;
@@ -85,11 +93,24 @@ int main(){
     InstructionMemory[9] = pack_i_type(0x03, 0, 11, 0, 0x2);
     // 10: ADDI x12, x11, 1      (uses x11 IMMEDIATELY -> classic load-use hazard, must stall)
     InstructionMemory[10] = pack_i_type(0x13, 11, 12, 1, 0x0);
+    // 11: JAL x13, +8           (addr 44 -> target 52 = idx13; x13 = link = 48; tests JAL + skip)
+    InstructionMemory[11] = pack_j_type(13, 8);
+    // 12: ADDI x17, x0, 999     (should be SKIPPED by the JAL above)
+    InstructionMemory[12] = pack_i_type(0x13, 0, 17, 999, 0x0);
+    // 13: ADDI x20, x0, 64      (JAL target; also sets up JALR's jump-target register)
+    InstructionMemory[13] = pack_i_type(0x13, 0, 20, 64, 0x0);
+    // 14: JALR x19, x20, 0      (uses x20 IMMEDIATELY -> tests forwarding into JALR's rs1;
+    //                            addr 56 -> target (64+0)&~1 = 64 = idx16; x19 = link = 60)
+    InstructionMemory[14] = pack_i_type(0x67, 20, 19, 0, 0x0);
+    // 15: ADDI x21, x0, 888     (should be SKIPPED by the JALR above)
+    InstructionMemory[15] = pack_i_type(0x13, 0, 21, 888, 0x0);
+    // 16: ADDI x22, x0, 77      (JALR target)
+    InstructionMemory[16] = pack_i_type(0x13, 0, 22, 77, 0x0);
 
     std::cout << "---Starting Pipeline Simulation---" << std::endl;
 
     // Run enough simulated clock cycles to drain the pipeline
-    for(int cycle = 0; cycle < 20; cycle++){
+    for(int cycle = 0; cycle < 30; cycle++){
         clock_cycle();
 
         // Testbench-side trace logging -- reads the plain scalar globals the
@@ -109,6 +130,12 @@ int main(){
                   << " | x10: " << RegisterFile[10]
                   << " | x11: " << RegisterFile[11]
                   << " | x12: " << RegisterFile[12]
+                  << " | x13: " << RegisterFile[13]
+                  << " | x17: " << RegisterFile[17]
+                  << " | x19: " << RegisterFile[19]
+                  << " | x20: " << RegisterFile[20]
+                  << " | x21: " << RegisterFile[21]
+                  << " | x22: " << RegisterFile[22]
                   << std::endl;
     }
 
