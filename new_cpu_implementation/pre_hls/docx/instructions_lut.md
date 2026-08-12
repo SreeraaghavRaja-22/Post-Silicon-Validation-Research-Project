@@ -1,6 +1,6 @@
 # Instruction Lookup Table
 
-Quick reference for the RV32I instructions implemented in `pipeline.cpp`, grouped by instruction type. All fields are given in hex.
+Quick reference for the RV32I instructions implemented in `pipeline_core.cpp`, grouped by instruction type. All fields are given in hex.
 
 ## R-Type (opcode `0x33`)
 
@@ -60,6 +60,15 @@ Comparison and PC redirect are both resolved in the EX stage. `imm` is the sign-
 | `0x6` | BLTU | `if (rs1 < rs2) PC = pc + imm` (unsigned) |
 | `0x7` | BGEU | `if (rs1 >= rs2) PC = pc + imm` (unsigned) |
 
+## Jump (opcodes `0x6F`, `0x67`)
+
+Both are unconditional jumps resolved in the EX stage: `rd` always gets the return address (`pc + 4`), and `PC` is always redirected — no comparison, unlike branches. `IF_ID` is squashed the same way as a taken branch.
+
+| Opcode | funct3 | Mnemonic | Functionality |
+|--------|--------|----------|----------------|
+| `0x6F` | — (J-type) | JAL  | `rd = pc + 4; PC = pc + imm` (imm is the sign-extended J-type offset; `rs1` is not read — those bits are part of the immediate) |
+| `0x67` | `0x0` (I-type) | JALR | `rd = pc + 4; PC = (rs1 + imm) & ~1` (LSB cleared per spec, since `rs1 + imm` is ordinary register arithmetic and could land on an odd address) |
+
 ## Opcode Summary
 
 | Opcode | Format | Category |
@@ -69,7 +78,5 @@ Comparison and PC redirect are both resolved in the EX stage. `imm` is the sign-
 | `0x03` | I-type | Load |
 | `0x23` | S-type | Store |
 | `0x63` | B-type | Branch |
-
-## Not Yet Implemented
-
-JAL (`0x6F`), JALR (`0x67`), LUI (`0x37`), AUIPC (`0x17`), and system/fence instructions are not handled by the current simulator.
+| `0x6F` | J-type | Jump (JAL) |
+| `0x67` | I-type | Jump (JALR) |
