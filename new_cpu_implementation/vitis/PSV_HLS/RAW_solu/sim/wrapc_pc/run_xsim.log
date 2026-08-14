@@ -1,0 +1,206 @@
+---Starting Pipeline Simulation (HLS-oriented core)---
+Cycle: 1 | PC: 4 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 2 | PC: 8 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 3 | PC: 12 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 4 | PC: 16 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 5 | PC: 20 | Stall: NO | x3: 30 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 6 | PC: 24 | Stall: NO | x3: 30 | x5: 35 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 7 | PC: 28 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 8 | PC: 32 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 9 | PC: 36 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 10 | PC: 40 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 11 | PC: 44 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 12 | PC: 44 | Stall: YES | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 13 | PC: 48 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 14 | PC: 52 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 15 | PC: 56 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 16 | PC: 60 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 17 | PC: 64 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 18 | PC: 68 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 19 | PC: 72 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 0 | x20: 64 | x21: 0 | x22: 0
+Cycle: 20 | PC: 76 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 0
+Cycle: 21 | PC: 80 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 0
+Cycle: 22 | PC: 84 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 23 | PC: 88 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 24 | PC: 92 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 25 | PC: 96 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 26 | PC: 100 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 27 | PC: 104 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 28 | PC: 108 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 29 | PC: 112 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 30 | PC: 116 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Trace log written to raw_hazard_trace_hls.csv (30 cycles)
+
+C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis\PSV_HLS\RAW_solu\sim\verilog>set PATH= 
+
+C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis\PSV_HLS\RAW_solu\sim\verilog>call C:/Xilinx/Vivado/2021.2/bin/xelab xil_defaultlib.apatb_pipeline_top_top glbl -Oenable_linking_all_libraries  -prj pipeline_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib "ieee_proposed=./ieee_proposed" -s pipeline_top -debug wave 
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_pipeline_top_top glbl -Oenable_linking_all_libraries -prj pipeline_top.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_19 -L floating_point_v7_1_13 --lib ieee_proposed=./ieee_proposed -s pipeline_top -debug wave 
+Multi-threading is on. Using 22 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/pipeline_top.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_pipeline_top_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/pipeline_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/pipeline_top_clock_cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_top_clock_cycle
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/pipeline_top_clock_cycle_RegisterFile_V_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipeline_top_clock_cycle_RegisterFile_V_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.pipeline_top_clock_cycle_Registe...
+Compiling module xil_defaultlib.pipeline_top_clock_cycle
+Compiling module xil_defaultlib.pipeline_top
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_pipeline_top_top
+Compiling module work.glbl
+Built simulation snapshot pipeline_top
+
+****** xsim v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/pipeline_top/xsim_script.tcl
+# xsim {pipeline_top} -view {{pipeline_top_dataflow_ana.wcfg}} -tclbatch {pipeline_top.tcl} -protoinst {pipeline_top.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file pipeline_top.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_pipeline_top_top/AESL_inst_pipeline_top//AESL_inst_pipeline_top_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_pipeline_top_top/AESL_inst_pipeline_top/grp_clock_cycle_fu_123/grp_clock_cycle_fu_123_activity
+Time resolution is 1 ps
+open_wave_config pipeline_top_dataflow_ana.wcfg
+source pipeline_top.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/pc_out -into $return_group -radix hex
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/hazard_dest_out -into $return_group -radix hex
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/forward_B_sel_out -into $return_group -radix hex
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/forward_A_sel_out -into $return_group -radix hex
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/stall_out -into $return_group -radix hex
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_local_deadlock -into $return_group -radix hex
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_local_block -into $return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(wire) -into $cinputgroup]
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/reset -into $return_group -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake" -into $designtopgroup]
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_start -into $blocksiggroup
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_done -into $blocksiggroup
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_idle -into $blocksiggroup
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_ready -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_rst -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_pipeline_top_top/AESL_inst_pipeline_top/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_pipeline_top_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_pipeline_top_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_pipeline_top_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_pipeline_top_top/LENGTH_reset -into $tb_portdepth_group -radix hex
+## add_wave /apatb_pipeline_top_top/LENGTH_stall_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_pipeline_top_top/LENGTH_forward_A_sel_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_pipeline_top_top/LENGTH_forward_B_sel_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_pipeline_top_top/LENGTH_hazard_dest_out -into $tb_portdepth_group -radix hex
+## add_wave /apatb_pipeline_top_top/LENGTH_pc_out -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(axi_slave) -into $tbcoutputgroup]
+## add_wave /apatb_pipeline_top_top/pc_out -into $tb_return_group -radix hex
+## add_wave /apatb_pipeline_top_top/hazard_dest_out -into $tb_return_group -radix hex
+## add_wave /apatb_pipeline_top_top/forward_B_sel_out -into $tb_return_group -radix hex
+## add_wave /apatb_pipeline_top_top/forward_A_sel_out -into $tb_return_group -radix hex
+## add_wave /apatb_pipeline_top_top/stall_out -into $tb_return_group -radix hex
+## add_wave /apatb_pipeline_top_top/ap_local_deadlock -into $tb_return_group -radix hex
+## add_wave /apatb_pipeline_top_top/ap_local_block -into $tb_return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(wire) -into $tbcinputgroup]
+## add_wave /apatb_pipeline_top_top/reset -into $tb_return_group -radix hex
+## save_wave_config pipeline_top.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 31 [0.00%] @ "125000"
+// RTL Simulation : 1 / 31 [100.00%] @ "155000"
+// RTL Simulation : 2 / 31 [100.00%] @ "195000"
+// RTL Simulation : 3 / 31 [100.00%] @ "245000"
+// RTL Simulation : 4 / 31 [100.00%] @ "295000"
+// RTL Simulation : 5 / 31 [100.00%] @ "345000"
+// RTL Simulation : 6 / 31 [100.00%] @ "395000"
+// RTL Simulation : 7 / 31 [100.00%] @ "445000"
+// RTL Simulation : 8 / 31 [100.00%] @ "495000"
+// RTL Simulation : 9 / 31 [100.00%] @ "545000"
+// RTL Simulation : 10 / 31 [100.00%] @ "595000"
+// RTL Simulation : 11 / 31 [100.00%] @ "645000"
+// RTL Simulation : 12 / 31 [100.00%] @ "695000"
+// RTL Simulation : 13 / 31 [100.00%] @ "745000"
+// RTL Simulation : 14 / 31 [100.00%] @ "795000"
+// RTL Simulation : 15 / 31 [100.00%] @ "845000"
+// RTL Simulation : 16 / 31 [100.00%] @ "895000"
+// RTL Simulation : 17 / 31 [100.00%] @ "945000"
+// RTL Simulation : 18 / 31 [100.00%] @ "995000"
+// RTL Simulation : 19 / 31 [100.00%] @ "1045000"
+// RTL Simulation : 20 / 31 [100.00%] @ "1095000"
+// RTL Simulation : 21 / 31 [100.00%] @ "1145000"
+// RTL Simulation : 22 / 31 [100.00%] @ "1195000"
+// RTL Simulation : 23 / 31 [100.00%] @ "1245000"
+// RTL Simulation : 24 / 31 [100.00%] @ "1295000"
+// RTL Simulation : 25 / 31 [100.00%] @ "1345000"
+// RTL Simulation : 26 / 31 [100.00%] @ "1395000"
+// RTL Simulation : 27 / 31 [100.00%] @ "1445000"
+// RTL Simulation : 28 / 31 [100.00%] @ "1495000"
+// RTL Simulation : 29 / 31 [100.00%] @ "1545000"
+// RTL Simulation : 30 / 31 [100.00%] @ "1595000"
+// RTL Simulation : 31 / 31 [100.00%] @ "1645000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1705 ns : File "C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/sim/verilog/pipeline_top.autotb.v" Line 488
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Aug 14 16:13:31 2026...
+---Starting Pipeline Simulation (HLS-oriented core)---
+Cycle: 1 | PC: 4 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 2 | PC: 8 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 3 | PC: 12 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 4 | PC: 16 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 5 | PC: 20 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 6 | PC: 24 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 7 | PC: 28 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 8 | PC: 32 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 9 | PC: 36 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 10 | PC: 40 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 11 | PC: 44 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 12 | PC: 48 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 13 | PC: 52 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 14 | PC: 56 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 15 | PC: 60 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 16 | PC: 64 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 17 | PC: 68 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 18 | PC: 72 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 19 | PC: 76 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 20 | PC: 80 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 21 | PC: 84 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 22 | PC: 88 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 23 | PC: 92 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 24 | PC: 96 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 25 | PC: 100 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 26 | PC: 104 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 27 | PC: 108 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 28 | PC: 112 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 29 | PC: 116 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 30 | PC: 120 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Trace log written to raw_hazard_trace_hls.csv (30 cycles)

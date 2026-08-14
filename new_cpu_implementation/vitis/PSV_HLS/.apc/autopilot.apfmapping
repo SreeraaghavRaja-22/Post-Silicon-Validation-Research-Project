@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="pipeline_core_hls.cpp" path="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\hls\pipeline_core_hls.cpp"/>
     <originFiles name="pipeline_core_hls.h" path="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\hls\pipeline_core_hls.h"/>
+    <originFiles name="pipeline_core_hls.cpp" path="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\hls\pipeline_core_hls.cpp"/>
   </source>
   <testbench>
     <originFiles name="testbench_hls.cpp" path="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\hls\test\testbench_hls.cpp"/>

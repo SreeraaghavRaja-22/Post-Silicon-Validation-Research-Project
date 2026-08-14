@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'pipeline_top'
+================================================================
+* Date:           Fri Aug 14 16:08:56 2026
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        PSV_HLS
+* Solution:       RAW_solu (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k70t-fbv676-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.154 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        4|  10.000 ns|  40.000 ns|    2|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------+-------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                        |             |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |        Instance        |    Module   |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +------------------------+-------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_clock_cycle_fu_123  |clock_cycle  |        1|        2|  10.000 ns|  20.000 ns|    1|    2|       no|
+        +------------------------+-------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF  |  LUT  | URAM|
++-----------------+---------+-----+-------+-------+-----+
+|DSP              |        -|    -|      -|      -|    -|
+|Expression       |        -|    -|      -|      -|    -|
+|FIFO             |        -|    -|      -|      -|    -|
+|Instance         |        0|    -|     40|    485|    0|
+|Memory           |        -|    -|      -|      -|    -|
+|Multiplexer      |        -|    -|      -|    152|    -|
+|Register         |        -|    -|     88|      -|    -|
++-----------------+---------+-----+-------+-------+-----+
+|Total            |        0|    0|    128|    637|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Available        |      270|  240|  82000|  41000|    0|
++-----------------+---------+-----+-------+-------+-----+
+|Utilization (%)  |        0|    0|     ~0|      1|    0|
++-----------------+---------+-----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------+-------------+---------+----+----+-----+-----+
+    |        Instance        |    Module   | BRAM_18K| DSP| FF | LUT | URAM|
+    +------------------------+-------------+---------+----+----+-----+-----+
+    |grp_clock_cycle_fu_123  |clock_cycle  |        0|   0|  40|  485|    0|
+    +------------------------+-------------+---------+----+----+-----+-----+
+    |Total                   |             |        0|   0|  40|  485|    0|
+    +------------------------+-------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------+----+-----------+-----+-----------+
+    |       Name      | LUT| Input Size| Bits| Total Bits|
+    +-----------------+----+-----------+-----+-----------+
+    |EX_MEM_dest      |   9|          2|    2|          4|
+    |EX_MEM_outVal_V  |   9|          2|    1|          2|
+    |EX_MEM_valid     |   9|          2|    1|          2|
+    |ID_EX_dest       |   9|          2|    2|          4|
+    |ID_EX_src1       |   9|          2|    2|          4|
+    |ID_EX_src2       |   9|          2|    2|          4|
+    |ID_EX_valid      |   9|          2|    1|          2|
+    |IF_ID_pc_V       |   9|          2|   32|         64|
+    |IF_ID_valid      |   9|          2|    1|          2|
+    |MEM_WB_dest      |   9|          2|    2|          4|
+    |MEM_WB_outVal_V  |   9|          2|    1|          2|
+    |MEM_WB_valid     |   9|          2|    1|          2|
+    |PC_V             |   9|          2|   32|         64|
+    |ap_NS_fsm        |  17|          4|    1|          4|
+    |forward_A_sel_1  |   9|          2|    2|          4|
+    |forward_B_sel_1  |   9|          2|    2|          4|
+    +-----------------+----+-----------+-----+-----------+
+    |Total            | 152|         34|   85|        172|
+    +-----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+----+----+-----+-----------+
+    |                 Name                | FF | LUT| Bits| Const Bits|
+    +-------------------------------------+----+----+-----+-----------+
+    |EX_MEM_dest                          |   2|   0|    2|          0|
+    |EX_MEM_outVal_V                      |   1|   0|    1|          0|
+    |EX_MEM_valid                         |   1|   0|    1|          0|
+    |ID_EX_dest                           |   2|   0|    2|          0|
+    |ID_EX_src1                           |   2|   0|    2|          0|
+    |ID_EX_src2                           |   2|   0|    2|          0|
+    |ID_EX_valid                          |   1|   0|    1|          0|
+    |IF_ID_pc_V                           |  32|   0|   32|          0|
+    |IF_ID_valid                          |   1|   0|    1|          0|
+    |MEM_WB_dest                          |   2|   0|    2|          0|
+    |MEM_WB_outVal_V                      |   1|   0|    1|          0|
+    |MEM_WB_valid                         |   1|   0|    1|          0|
+    |PC_V                                 |  32|   0|   32|          0|
+    |ap_CS_fsm                            |   3|   0|    3|          0|
+    |forward_A_sel_1                      |   2|   0|    2|          0|
+    |forward_B_sel_1                      |   2|   0|    2|          0|
+    |grp_clock_cycle_fu_123_ap_start_reg  |   1|   0|    1|          0|
+    +-------------------------------------+----+----+-----+-----------+
+    |Total                                |  88|   0|   88|          0|
+    +-------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-------------------+-----+-----+------------+-------------------+--------------+
+|ap_local_block     |  out|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_local_deadlock  |  out|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_clk             |   in|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|       pipeline_top|  return value|
+|reset              |   in|    1|     ap_none|              reset|        scalar|
+|stall_out          |  out|    1|     ap_none|          stall_out|       pointer|
+|forward_A_sel_out  |  out|   32|     ap_none|  forward_A_sel_out|       pointer|
+|forward_B_sel_out  |  out|   32|     ap_none|  forward_B_sel_out|       pointer|
+|hazard_dest_out    |  out|   32|     ap_none|    hazard_dest_out|       pointer|
+|pc_out             |  out|   32|     ap_none|             pc_out|       pointer|
++-------------------+-----+-----+------------+-------------------+--------------+
+

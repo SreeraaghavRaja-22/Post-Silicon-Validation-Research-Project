@@ -1,0 +1,128 @@
+
+
+================================================================
+== Synthesis Summary Report of 'pipeline_top'
+================================================================
++ General Information: 
+    * Date:           Fri Aug 14 16:08:57 2026
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+    * Project:        PSV_HLS
+    * Solution:       RAW_solu (Vivado IP Flow Target)
+    * Product family: kintex7
+    * Target device:  xc7k70t-fbv676-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |     Modules    | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |          |     |
+    |     & Loops    | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT   | URAM|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |+ pipeline_top  |     -|  2.15|        4|  40.000|         -|        5|     -|        no|     -|   -|  128 (~0%)|  637 (1%)|    -|
+    | + clock_cycle  |     -|  2.15|        2|  20.000|         -|        2|     -|        no|     -|   -|   40 (~0%)|  485 (1%)|    -|
+    +----------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* REGISTER
++-------------------+---------+----------+
+| Interface         | Mode    | Bitwidth |
++-------------------+---------+----------+
+| forward_A_sel_out | ap_none | 32       |
+| forward_B_sel_out | ap_none | 32       |
+| hazard_dest_out   | ap_none | 32       |
+| pc_out            | ap_none | 32       |
+| reset             | ap_none | 1        |
+| stall_out         | ap_none | 1        |
++-------------------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-------------------+-----------+--------------+
+| Argument          | Direction | Datatype     |
++-------------------+-----------+--------------+
+| reset             | in        | bool         |
+| stall_out         | out       | bool&        |
+| forward_A_sel_out | out       | int&         |
+| forward_B_sel_out | out       | int&         |
+| hazard_dest_out   | out       | int&         |
+| pc_out            | out       | ap_uint<32>& |
++-------------------+-----------+--------------+
+
+* SW-to-HW Mapping
++-------------------+-------------------+---------+
+| Argument          | HW Interface      | HW Type |
++-------------------+-------------------+---------+
+| reset             | reset             | port    |
+| stall_out         | stall_out         | port    |
+| forward_A_sel_out | forward_A_sel_out | port    |
+| forward_B_sel_out | forward_B_sel_out | port    |
+| hazard_dest_out   | hazard_dest_out   | port    |
+| pc_out            | pc_out            | port    |
++-------------------+-------------------+---------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------+-----+--------+-----------+-----+--------+---------+
+| Name                   | DSP | Pragma | Variable  | Op  | Impl   | Latency |
++------------------------+-----+--------+-----------+-----+--------+---------+
+| + pipeline_top         | 0   |        |           |     |        |         |
+|  + clock_cycle         | 0   |        |           |     |        |         |
+|    add_ln69_fu_249_p2  | -   |        | add_ln69  | add | fabric | 0       |
+|    add_ln291_fu_533_p2 | -   |        | add_ln291 | add | fabric | 0       |
++------------------------+-----+--------+-----------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++---------------------+------+------+--------+----------------+---------+------+---------+
+| Name                | BRAM | URAM | Pragma | Variable       | Storage | Impl | Latency |
++---------------------+------+------+--------+----------------+---------+------+---------+
+| + pipeline_top      | 0    | 0    |        |                |         |      |         |
+|  + clock_cycle      | 0    | 0    |        |                |         |      |         |
+|    RegisterFile_V_U | -    | -    |        | RegisterFile_V | ram_1p  | auto | 1       |
++---------------------+------+------+--------+----------------+---------+------+---------+
+
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------------+---------------------------------------------------------------------+
+| Type      | Options                        | Location                                                            |
++-----------+--------------------------------+---------------------------------------------------------------------+
+| interface | ap_none port=reset             | ../hls/pipeline_core_hls.cpp:304 in pipeline_top, reset             |
+| interface | ap_none port=stall_out         | ../hls/pipeline_core_hls.cpp:305 in pipeline_top, stall_out         |
+| interface | ap_none port=forward_A_sel_out | ../hls/pipeline_core_hls.cpp:306 in pipeline_top, forward_A_sel_out |
+| interface | ap_none port=forward_B_sel_out | ../hls/pipeline_core_hls.cpp:307 in pipeline_top, forward_B_sel_out |
+| interface | ap_none port=hazard_dest_out   | ../hls/pipeline_core_hls.cpp:308 in pipeline_top, hazard_dest_out   |
+| interface | ap_none port=pc_out            | ../hls/pipeline_core_hls.cpp:309 in pipeline_top, pc_out            |
+| interface | ap_ctrl_hs port=return         | ../hls/pipeline_core_hls.cpp:310 in pipeline_top, return            |
++-----------+--------------------------------+---------------------------------------------------------------------+
+
+

@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vitis_HLS/2021.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling testbench_hls.cpp_pre.cpp.tb.cpp
+   Compiling apatb_pipeline_top.cpp
+   Compiling pipeline_core_hls.cpp_pre.cpp.tb.cpp
+   Compiling apatb_pipeline_top_ir.ll
+   Generating cosim.tv.exe

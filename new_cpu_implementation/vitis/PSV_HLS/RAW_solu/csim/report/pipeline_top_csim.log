@@ -1,6 +1,8 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' is up to date.
+   Compiling ../../../../../hls/test/testbench_hls.cpp in debug mode
+   Compiling ../../../../../hls/pipeline_core_hls.cpp in debug mode
+   Generating csim.exe
 ---Starting Pipeline Simulation (HLS-oriented core)---
 Cycle: 1 | PC: 4 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
 Cycle: 2 | PC: 8 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0

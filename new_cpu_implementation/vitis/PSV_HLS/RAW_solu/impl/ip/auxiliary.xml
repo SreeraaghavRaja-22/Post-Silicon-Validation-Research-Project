@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pipeline_top" xd:componentRef="pipeline_top" xd:initiationInterval="x" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="reset" xd:originalName="reset" xd:direction="in" xd:interfaceRef="reset" xd:busTypeRef="register" xd:dataWidth="1"/>
+  <xd:arg xd:name="stall_out" xd:originalName="stall_out" xd:direction="out" xd:interfaceRef="stall_out" xd:busTypeRef="register" xd:dataWidth="1"/>
+  <xd:arg xd:name="forward_A_sel_out" xd:originalName="forward_A_sel_out" xd:direction="out" xd:interfaceRef="forward_A_sel_out" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="forward_B_sel_out" xd:originalName="forward_B_sel_out" xd:direction="out" xd:interfaceRef="forward_B_sel_out" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="hazard_dest_out" xd:originalName="hazard_dest_out" xd:direction="out" xd:interfaceRef="hazard_dest_out" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:arg xd:name="pc_out" xd:originalName="pc_out" xd:direction="out" xd:interfaceRef="pc_out" xd:busTypeRef="register" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="4" xd:average-case="3"/>
+  <xd:resourceEstimates xd:LUT="637" xd:FF="128" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'pipeline_top'
+================================================================
+* Date:           Fri Aug 14 16:08:55 2026
+
+* Version:        2021.2 (Build 3367213 on Tue Oct 19 02:48:09 MDT 2021)
+* Project:        PSV_HLS
+* Solution:       RAW_solu (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k70t-fbv676-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.154 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        1|        4|  10.000 ns|  40.000 ns|    2|    5|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 3 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2"   --->   Operation 4 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_1, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %reset"   --->   Operation 6 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %reset, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %stall_out"   --->   Operation 8 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %stall_out, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %forward_A_sel_out"   --->   Operation 10 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %forward_A_sel_out, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %forward_B_sel_out"   --->   Operation 12 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %forward_B_sel_out, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %hazard_dest_out"   --->   Operation 14 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %hazard_dest_out, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %pc_out"   --->   Operation 16 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %pc_out, void @empty_0, i32 0, i32 0, void @empty, i32 0, i32 0, void @empty, void @empty, void @empty, i32 0, i32 0, i32 0, i32 0, void @empty, void @empty"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%reset_read = read i1 @_ssdm_op_Read.ap_none.i1, i1 %reset" [../hls/pipeline_core_hls.cpp:297]   --->   Operation 18 'read' 'reset_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln313 = br i1 %reset_read, void, void" [../hls/pipeline_core_hls.cpp:313]   --->   Operation 19 'br' 'br_ln313' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%call_ln328 = call void @clock_cycle, i1 %MEM_WB_valid, i2 %MEM_WB_dest, i1 %MEM_WB_outVal_V, i1 %RegisterFile_V, i1 %EX_MEM_valid, i2 %EX_MEM_dest, i1 %EX_MEM_outVal_V, i1 %ID_EX_valid, i2 %ID_EX_src1, i2 %ID_EX_src2, i2 %ID_EX_dest, i32 %PC_V, i1 %IF_ID_valid, i32 %IF_ID_pc_V, i32 %ID_EX_pc_V, i1 %ID_EX_val1_V, i2 %forward_B_sel_1, i2 %forward_A_sel_1" [../hls/pipeline_core_hls.cpp:328]   --->   Operation 20 'call' 'call_ln328' <Predicate = (!reset_read)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 0, i1 %IF_ID_valid" [../hls/pipeline_core_hls.h:41]   --->   Operation 21 'store' 'store_ln41' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%store_ln41 = store i32 0, i32 %IF_ID_pc_V" [../hls/pipeline_core_hls.h:41]   --->   Operation 22 'store' 'store_ln41' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 0, i1 %ID_EX_valid" [../hls/pipeline_core_hls.h:41]   --->   Operation 23 'store' 'store_ln41' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%store_ln41 = store i32 0, i32 %ID_EX_pc_V" [../hls/pipeline_core_hls.h:41]   --->   Operation 24 'store' 'store_ln41' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%store_ln43 = store i2 3, i2 %ID_EX_src1" [../hls/pipeline_core_hls.h:43]   --->   Operation 25 'store' 'store_ln43' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%store_ln43 = store i2 3, i2 %ID_EX_src2" [../hls/pipeline_core_hls.h:43]   --->   Operation 26 'store' 'store_ln43' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%store_ln43 = store i2 3, i2 %ID_EX_dest" [../hls/pipeline_core_hls.h:43]   --->   Operation 27 'store' 'store_ln43' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%store_ln44 = store i1 0, i1 %ID_EX_val1_V" [../hls/pipeline_core_hls.h:44]   --->   Operation 28 'store' 'store_ln44' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 0, i1 %EX_MEM_valid" [../hls/pipeline_core_hls.h:41]   --->   Operation 29 'store' 'store_ln41' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%store_ln43 = store i2 3, i2 %EX_MEM_dest" [../hls/pipeline_core_hls.h:43]   --->   Operation 30 'store' 'store_ln43' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%store_ln44 = store i1 0, i1 %EX_MEM_outVal_V" [../hls/pipeline_core_hls.h:44]   --->   Operation 31 'store' 'store_ln44' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%store_ln41 = store i1 0, i1 %MEM_WB_valid" [../hls/pipeline_core_hls.h:41]   --->   Operation 32 'store' 'store_ln41' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%store_ln43 = store i2 3, i2 %MEM_WB_dest" [../hls/pipeline_core_hls.h:43]   --->   Operation 33 'store' 'store_ln43' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%store_ln44 = store i1 0, i1 %MEM_WB_outVal_V" [../hls/pipeline_core_hls.h:44]   --->   Operation 34 'store' 'store_ln44' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%store_ln322 = store i2 0, i2 %forward_A_sel_1" [../hls/pipeline_core_hls.cpp:322]   --->   Operation 35 'store' 'store_ln322' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%store_ln323 = store i2 0, i2 %forward_B_sel_1" [../hls/pipeline_core_hls.cpp:323]   --->   Operation 36 'store' 'store_ln323' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%store_ln325 = store i32 0, i32 %PC_V" [../hls/pipeline_core_hls.cpp:325]   --->   Operation 37 'store' 'store_ln325' <Predicate = (reset_read)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%br_ln326 = br void" [../hls/pipeline_core_hls.cpp:326]   --->   Operation 38 'br' 'br_ln326' <Predicate = (reset_read)> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 39 [1/2] (0.00ns)   --->   "%call_ln328 = call void @clock_cycle, i1 %MEM_WB_valid, i2 %MEM_WB_dest, i1 %MEM_WB_outVal_V, i1 %RegisterFile_V, i1 %EX_MEM_valid, i2 %EX_MEM_dest, i1 %EX_MEM_outVal_V, i1 %ID_EX_valid, i2 %ID_EX_src1, i2 %ID_EX_src2, i2 %ID_EX_dest, i32 %PC_V, i1 %IF_ID_valid, i32 %IF_ID_pc_V, i32 %ID_EX_pc_V, i1 %ID_EX_val1_V, i2 %forward_B_sel_1, i2 %forward_A_sel_1" [../hls/pipeline_core_hls.cpp:328]   --->   Operation 39 'call' 'call_ln328' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 40 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln332 = write void @_ssdm_op_Write.ap_none.i1P0A, i1 %stall_out, i1 0" [../hls/pipeline_core_hls.cpp:332]   --->   Operation 41 'write' 'write_ln332' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%forward_A_sel_1_load = load i2 %forward_A_sel_1" [../hls/pipeline_core_hls.cpp:333]   --->   Operation 42 'load' 'forward_A_sel_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%zext_ln333 = zext i2 %forward_A_sel_1_load" [../hls/pipeline_core_hls.cpp:333]   --->   Operation 43 'zext' 'zext_ln333' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "%write_ln333 = write void @_ssdm_op_Write.ap_none.i32P0A, i32 %forward_A_sel_out, i32 %zext_ln333" [../hls/pipeline_core_hls.cpp:333]   --->   Operation 44 'write' 'write_ln333' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%forward_B_sel_1_load = load i2 %forward_B_sel_1" [../hls/pipeline_core_hls.cpp:334]   --->   Operation 45 'load' 'forward_B_sel_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%zext_ln334 = zext i2 %forward_B_sel_1_load" [../hls/pipeline_core_hls.cpp:334]   --->   Operation 46 'zext' 'zext_ln334' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%write_ln334 = write void @_ssdm_op_Write.ap_none.i32P0A, i32 %forward_B_sel_out, i32 %zext_ln334" [../hls/pipeline_core_hls.cpp:334]   --->   Operation 47 'write' 'write_ln334' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%write_ln335 = write void @_ssdm_op_Write.ap_none.i32P0A, i32 %hazard_dest_out, i32 4294967295" [../hls/pipeline_core_hls.cpp:335]   --->   Operation 48 'write' 'write_ln335' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%PC_V_load = load i32 %PC_V" [../hls/pipeline_core_hls.cpp:336]   --->   Operation 49 'load' 'PC_V_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%write_ln336 = write void @_ssdm_op_Write.ap_none.i32P0A, i32 %pc_out, i32 %PC_V_load" [../hls/pipeline_core_hls.cpp:336]   --->   Operation 50 'write' 'write_ln336' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%ret_ln337 = ret" [../hls/pipeline_core_hls.cpp:337]   --->   Operation 51 'ret' 'ret_ln337' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

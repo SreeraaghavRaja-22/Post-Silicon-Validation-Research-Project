@@ -1,0 +1,639 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:718:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="and_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:732:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="or_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_ref.h:746:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="xor_reduce" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:304:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=pipeline_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:304:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=reset" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:305:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=stall_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:306:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=forward_A_sel_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:307:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=forward_B_sel_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:308:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=hazard_dest_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:309:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_none port=pc_out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../hls/pipeline_core_hls.cpp:310:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="pipeline_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_ctrl_hs port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:9:18" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into '__cxx_global_var_init.7'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="__cxx_global_var_init.7"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:41:29" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:44:47" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:44:35" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:44:25" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:44:15" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:42:42" msg_body="Inlining function 'ap_uint&lt;7&gt;::ap_uint(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_uint&lt;7&gt;::ap_uint(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:42:30" msg_body="Inlining function 'ap_uint&lt;3&gt;::ap_uint(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_uint&lt;3&gt;::ap_uint(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:42:18" msg_body="Inlining function 'ap_uint&lt;7&gt;::ap_uint(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_uint&lt;7&gt;::ap_uint(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:41:40" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'PipelineLatch::reset()'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="PipelineLatch::reset()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1853" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1810:1850" msg_body="Inlining function 'bool ap_int_base&lt;7, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)'">
+        <args Callee="bool ap_int_base&lt;7, false&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:341" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:555" msg_body="Inlining function 'ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1541:430" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:339" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:551" msg_body="Inlining function 'ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1540:427" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1691:323" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::arg1 operator&lt;&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, int)'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::arg1 operator&lt;&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1544:555" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator^&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator^&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1543:555" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator|&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator|&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1542:555" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1691:650" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1542:341" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1542:555" msg_body="Inlining function 'ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1542:430" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::ap_int_base&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:3098" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::ap_int_base(int)' into 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, true&gt;::ap_int_base(int)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1655:3096" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, false, 32, true&gt;(ap_int_base&lt;32, false&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:51:28" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'sign_extend(ap_uint&lt;32&gt;, int)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="sign_extend(ap_uint&lt;32&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:53:12" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'sign_extend(ap_uint&lt;32&gt;, int)'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="sign_extend(ap_uint&lt;32&gt;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:59:31" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_i(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_i(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:59:38" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_i(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_i(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:59:24" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'imm_i(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="imm_i(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1691:323" msg_body="Inlining function 'ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)' into 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)'">
+        <args Callee="ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)" Caller="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h:1543:555" msg_body="Inlining function 'ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)' into 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)'">
+        <args Callee="ap_int&lt;33&gt;::ap_int&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;)" Caller="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:28" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:66:24" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:20" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:48" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:64" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:65:43" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:72:28" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:72:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:76:24" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:72:20" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:75:19" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:75:42" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:75:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:75:29" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:74:19" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:74:44" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:74:36" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:74:29" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:73:19" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:73:42" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:73:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:73:29" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:72:42" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:81:28" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:81:35" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:85:24" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:81:20" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:84:19" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:84:45" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:84:36" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:84:29" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:83:19" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:83:43" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:83:36" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:83:29" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:82:19" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::logic operator|&lt;33, true, 33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, ap_int_base&lt;33, true&gt; const&amp;)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:82:44" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:82:36" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:82:29" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:81:42" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="ap_int_base&lt;33, true&gt;::RType&lt;33, true&gt;::arg1 operator&lt;&lt;&lt;33, true&gt;(ap_int_base&lt;33, true&gt; const&amp;, int)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:39:26" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:291:14" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:291:24" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:288:51" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:41:45" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:45:31" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:271:89" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:270:89" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:264:38" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:46:29" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:258:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:258:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:258:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:87:37" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:253:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:253:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:253:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:87:61" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:246:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:246:59" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:246:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:87:85" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:241:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:241:59" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:241:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:89:32" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:237:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:237:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:237:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:91:21" msg_body="Inlining function 'ap_int_base&lt;7, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;7, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:232:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:232:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:232:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:228:38" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:227:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:227:58" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:227:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:226:39" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:226:59" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:226:52" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:224:25" msg_body="Inlining function 'ap_int_base&lt;7, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;7, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:221:33" msg_body="Inlining function 'ap_uint&lt;7&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;7&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:221:53" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:221:46" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:220:31" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:220:51" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:220:44" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:219:33" msg_body="Inlining function 'ap_uint&lt;3&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;3&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:219:53" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:219:46" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:218:33" msg_body="Inlining function 'ap_uint&lt;7&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;7&gt;::ap_uint&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:218:45" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:94:29" msg_body="Inlining function 'ap_int_base&lt;3, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;3, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:197:41" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:188:35" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:188:47" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:187:28" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:187:48" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:187:41" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:186:28" msg_body="Inlining function 'ap_int_base&lt;33, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;33, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:186:48" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;($_0)32, true&gt;::logic operator&amp;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:186:41" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::RType&lt;32, false&gt;::arg1 operator&gt;&gt;&lt;32, false&gt;(ap_int_base&lt;32, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:175:25" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:96:41" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:163:22" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:163:63" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:163:43" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:162:29" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:162:38" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:96:65" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:157:22" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:157:62" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:157:42" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:156:29" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:156:38" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:97:50" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::minus operator-&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:149:26" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(unsigned int)' into 'clock_cycle()'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(unsigned int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:149:66" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:149:46" msg_body="Inlining function 'ap_int_base&lt;32, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:144:95" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:144:64" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:143:94" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:143:64" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:141:54" msg_body="Inlining function 'bool ap_int_base&lt;32, true&gt;::operator&gt;=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'clock_cycle()'">
+        <args Callee="bool ap_int_base&lt;32, true&gt;::operator&gt;=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:140:54" msg_body="Inlining function 'bool ap_int_base&lt;32, true&gt;::operator&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'clock_cycle()'">
+        <args Callee="bool ap_int_base&lt;32, true&gt;::operator&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:139:54" msg_body="Inlining function 'bool ap_int_base&lt;32, true&gt;::operator!=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'clock_cycle()'">
+        <args Callee="bool ap_int_base&lt;32, true&gt;::operator!=&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:138:54" msg_body="Inlining function 'bool ap_int_base&lt;32, true&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'clock_cycle()'">
+        <args Callee="bool ap_int_base&lt;32, true&gt;::operator==&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:137:29" msg_body="Inlining function 'ap_int_base&lt;3, false&gt;::operator unsigned long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;3, false&gt;::operator unsigned long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:132:29" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:132:38" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:123:46" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator&amp;&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:120:46" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator|&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator|&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:117:41" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:117:88" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:117:70" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:115:41" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:115:68" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:115:50" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:114:41" msg_body="Inlining function 'bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="bool operator==&lt;7, false&gt;(ap_int_base&lt;7, false&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:111:46" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator^&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::logic operator^&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:108:37" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:108:87" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:108:57" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:105:37" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int(int)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int(int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:105:47" msg_body="Inlining function 'bool ap_int_base&lt;32, true&gt;::operator&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const' into 'clock_cycle()'">
+        <args Callee="bool ap_int_base&lt;32, true&gt;::operator&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;) const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:102:46" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::arg1 operator&lt;&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, int)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::arg1 operator&lt;&lt;&lt;32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, int)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:102:55" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::operator long long() const' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::operator long long() const" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:99:41" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:99:50" msg_body="Inlining function 'ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int_base&lt;32, true&gt;::RType&lt;32, true&gt;::plus operator+&lt;32, true, 32, true&gt;(ap_int_base&lt;32, true&gt; const&amp;, ap_int_base&lt;32, true&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:97:41" msg_body="Inlining function 'ap_int&lt;32&gt;::ap_int&lt;33&gt;(ap_int&lt;33&gt; const&amp;)' into 'clock_cycle()'">
+        <args Callee="ap_int&lt;32&gt;::ap_int&lt;33&gt;(ap_int&lt;33&gt; const&amp;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:325:14" msg_body="Inlining function 'ap_uint&lt;32&gt;::ap_uint(int)' into 'pipeline_top(bool, bool&amp;, int&amp;, int&amp;, int&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="ap_uint&lt;32&gt;::ap_uint(int)" Caller="pipeline_top(bool, bool&amp;, int&amp;, int&amp;, int&amp;, ap_uint&lt;32&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:58:0" msg_body="Inlining function 'sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)' into 'imm_i(ap_uint&lt;32&gt;)'">
+        <args Callee="sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)" Caller="imm_i(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:64:0" msg_body="Inlining function 'sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)' into 'imm_s(ap_uint&lt;32&gt;)'">
+        <args Callee="sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)" Caller="imm_s(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:71:0" msg_body="Inlining function 'sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)' into 'imm_b(ap_uint&lt;32&gt;)'">
+        <args Callee="sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)" Caller="imm_b(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.h:80:0" msg_body="Inlining function 'sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)' into 'imm_j(ap_uint&lt;32&gt;)'">
+        <args Callee="sign_extend(ap_uint&lt;32&gt;, int) (.31.37.43)" Caller="imm_j(ap_uint&lt;32&gt;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:18:0" msg_body="Inlining function 'PipelineLatch::reset()' into 'clock_cycle()'">
+        <args Callee="PipelineLatch::reset()" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:18:0" msg_body="Inlining function 'imm_i(ap_uint&lt;32&gt;)' into 'clock_cycle()'">
+        <args Callee="imm_i(ap_uint&lt;32&gt;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:18:0" msg_body="Inlining function 'imm_s(ap_uint&lt;32&gt;)' into 'clock_cycle()'">
+        <args Callee="imm_s(ap_uint&lt;32&gt;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:18:0" msg_body="Inlining function 'imm_b(ap_uint&lt;32&gt;)' into 'clock_cycle()'">
+        <args Callee="imm_b(ap_uint&lt;32&gt;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:18:0" msg_body="Inlining function 'imm_j(ap_uint&lt;32&gt;)' into 'clock_cycle()'">
+        <args Callee="imm_j(ap_uint&lt;32&gt;)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:18:0" msg_body="Inlining function 'PipelineLatch::reset() (.75.78.161.215)' into 'clock_cycle()'">
+        <args Callee="PipelineLatch::reset() (.75.78.161.215)" Caller="clock_cycle()"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:303:0" msg_body="Inlining function 'PipelineLatch::reset()' into 'pipeline_top(bool, bool&amp;, int&amp;, int&amp;, int&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="PipelineLatch::reset()" Caller="pipeline_top(bool, bool&amp;, int&amp;, int&amp;, int&amp;, ap_uint&lt;32&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:303:0" msg_body="Inlining function 'PipelineLatch::reset() (.75.78.161.215)' into 'pipeline_top(bool, bool&amp;, int&amp;, int&amp;, int&amp;, ap_uint&lt;32&gt;&amp;)'">
+        <args Callee="PipelineLatch::reset() (.75.78.161.215)" Caller="pipeline_top(bool, bool&amp;, int&amp;, int&amp;, int&amp;, ap_uint&lt;32&gt;&amp;)"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../hls/pipeline_core_hls.cpp:303:0" msg_body="Aggregating scalar variable 'pc_out' with compact=bit mode in 32-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="32" HwTyName="scalar" Name="pc_out"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

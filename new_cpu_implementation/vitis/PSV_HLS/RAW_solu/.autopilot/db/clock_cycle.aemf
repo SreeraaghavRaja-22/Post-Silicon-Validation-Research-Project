@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1786738136446">
+  <ports id="1" name="MEM_WB_valid" type="PortType" coreId="1702129263" bitwidth="1" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="2" name="MEM_WB_dest" type="PortType" coreId="1702129263" bitwidth="2" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="3" name="MEM_WB_outVal_V" type="PortType" coreId="1684890463" bitwidth="1" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="5" name="EX_MEM_valid" type="PortType" coreId="1702129263" bitwidth="1" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="6" name="EX_MEM_dest" type="PortType" coreId="1702129263" bitwidth="2" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="7" name="EX_MEM_outVal_V" type="PortType" coreId="1702129263" bitwidth="1" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="8" name="ID_EX_valid" type="PortType" coreId="1869374247" bitwidth="1" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="9" name="ID_EX_src1" type="PortType" coreId="691941939" bitwidth="2" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="10" name="ID_EX_src2" type="PortType" coreId="1701867296" bitwidth="2" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="11" name="ID_EX_dest" type="PortType" coreId="744846706" bitwidth="2" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="12" name="PC_V" type="PortType" coreId="1601465961" bitwidth="32" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="13" name="IF_ID_valid" type="PortType" coreId="1046836594" bitwidth="1" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="14" name="IF_ID_pc_V" type="PortType" coreId="1768711536" bitwidth="32" direction="DirInOut">
+    <dataInputObjs>load</dataInputObjs>
+    <dataInputObjs>store</dataInputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>store</dataOutputObjs>
+  </ports>
+  <ports id="15" name="ID_EX_pc_V" type="PortType" coreId="1835627552" bitwidth="32" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="16" name="ID_EX_val1_V" type="PortType" coreId="1948265523" bitwidth="1" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="17" name="forward_B_sel_1" type="PortType" coreId="1663057509" bitwidth="2" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="18" name="forward_A_sel_1" type="PortType" coreId="1852399472" bitwidth="2" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <edges id="119" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="120" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="121" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="122" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="123" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="124" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="126" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="129" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="132" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="133" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="134" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="137" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="138" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="141" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="143" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="144" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="146" source_obj="//@ports.3" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="147" source_obj="//@ports.4" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="148" source_obj="//@ports.5" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="149" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="150" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="151" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="152" source_obj="//@ports.1" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="153" source_obj="//@ports.6" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="154" source_obj="//@ports.7" sink_obj="//@blocks.4/@node_objs.6"/>
+  <edges id="155" source_obj="//@ports.8" sink_obj="//@blocks.4/@node_objs.7"/>
+  <edges id="156" source_obj="//@ports.9" sink_obj="//@blocks.4/@node_objs.8"/>
+  <edges id="157" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="158" source_obj="//@ports.3" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="159" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="160" source_obj="//@ports.4" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="161" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.11"/>
+  <edges id="162" source_obj="//@ports.2" sink_obj="//@blocks.4/@node_objs.11"/>
+  <edges id="163" source_obj="//@ports.10" sink_obj="//@blocks.4/@node_objs.12"/>
+  <edges id="164" source_obj="//@ports.11" sink_obj="//@blocks.4/@node_objs.13"/>
+  <edges id="165" source_obj="//@ports.12" sink_obj="//@blocks.4/@node_objs.14"/>
+  <edges id="166" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.4/@node_objs.15"/>
+  <edges id="167" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.15"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.15"/>
+  <edges id="169" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="170" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="171" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="176" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="181" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="183" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="184" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="185" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="186" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="187" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="188" source_obj="//@blocks.5/@node_objs.5" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="189" source_obj="//@blocks.5/@node_objs.6" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="193" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="195" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="197" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="198" source_obj="//@blocks.5/@node_objs.8" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="199" source_obj="//@blocks.5/@node_objs.9" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="200" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="201" source_obj="//@blocks.5/@node_objs.11" sink_obj="//@blocks.5/@node_objs.12"/>
+  <edges id="202" source_obj="//@blocks.5/@node_objs.10" sink_obj="//@blocks.5/@node_objs.12"/>
+  <edges id="203" source_obj="//@blocks.5/@node_objs.12" sink_obj="//@blocks.5/@node_objs.13"/>
+  <edges id="206" source_obj="//@blocks.5/@node_objs.7" sink_obj="//@blocks.5/@node_objs.13"/>
+  <edges id="207" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.14"/>
+  <edges id="208" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.5/@node_objs.14"/>
+  <edges id="209" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.15"/>
+  <edges id="211" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="213" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.17"/>
+  <edges id="216" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.18"/>
+  <edges id="218" source_obj="//@blocks.5/@node_objs.15" sink_obj="//@blocks.5/@node_objs.19"/>
+  <edges id="219" source_obj="//@blocks.5/@node_objs.17" sink_obj="//@blocks.5/@node_objs.19"/>
+  <edges id="220" source_obj="//@blocks.5/@node_objs.16" sink_obj="//@blocks.5/@node_objs.20"/>
+  <edges id="221" source_obj="//@blocks.5/@node_objs.18" sink_obj="//@blocks.5/@node_objs.20"/>
+  <edges id="222" source_obj="//@blocks.5/@node_objs.20" sink_obj="//@blocks.5/@node_objs.21"/>
+  <edges id="223" source_obj="//@blocks.5/@node_objs.19" sink_obj="//@blocks.5/@node_objs.21"/>
+  <edges id="224" source_obj="//@blocks.5/@node_objs.21" sink_obj="//@blocks.5/@node_objs.22"/>
+  <edges id="225" source_obj="//@blocks.5/@node_objs.17" sink_obj="//@blocks.5/@node_objs.22"/>
+  <edges id="226" source_obj="//@blocks.5/@node_objs.22" sink_obj="//@blocks.5/@node_objs.23"/>
+  <edges id="227" source_obj="//@blocks.5/@node_objs.7" sink_obj="//@blocks.5/@node_objs.23"/>
+  <edges id="228" source_obj="//@blocks.5/@node_objs.13" sink_obj="//@blocks.5/@node_objs.23"/>
+  <edges id="229" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.5/@node_objs.24"/>
+  <edges id="230" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.5/@node_objs.24"/>
+  <edges id="231" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.25"/>
+  <edges id="232" source_obj="//@blocks.5/@node_objs.24" sink_obj="//@blocks.5/@node_objs.25"/>
+  <edges id="233" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.26"/>
+  <edges id="234" source_obj="//@blocks.5/@node_objs.12" sink_obj="//@blocks.5/@node_objs.26"/>
+  <edges id="235" source_obj="//@blocks.5/@node_objs.9" sink_obj="//@blocks.5/@node_objs.27"/>
+  <edges id="236" source_obj="//@blocks.5/@node_objs.14" sink_obj="//@blocks.5/@node_objs.27"/>
+  <edges id="237" source_obj="//@blocks.5/@node_objs.8" sink_obj="//@blocks.5/@node_objs.28"/>
+  <edges id="238" source_obj="//@blocks.5/@node_objs.26" sink_obj="//@blocks.5/@node_objs.28"/>
+  <edges id="239" source_obj="//@blocks.5/@node_objs.28" sink_obj="//@blocks.5/@node_objs.29"/>
+  <edges id="240" source_obj="//@blocks.5/@node_objs.27" sink_obj="//@blocks.5/@node_objs.29"/>
+  <edges id="241" source_obj="//@blocks.5/@node_objs.29" sink_obj="//@blocks.5/@node_objs.30"/>
+  <edges id="242" source_obj="//@blocks.5/@node_objs.13" sink_obj="//@blocks.5/@node_objs.30"/>
+  <edges id="243" source_obj="//@blocks.5/@node_objs.23" sink_obj="//@blocks.5/@node_objs.30"/>
+  <edges id="244" source_obj="//@blocks.5/@node_objs.29" sink_obj="//@blocks.5/@node_objs.31"/>
+  <edges id="247" source_obj="//@blocks.5/@node_objs.29" sink_obj="//@blocks.5/@node_objs.32"/>
+  <edges id="248" source_obj="//@blocks.5/@node_objs.25" sink_obj="//@blocks.5/@node_objs.32"/>
+  <edges id="249" source_obj="//@blocks.5/@node_objs.32" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="250" source_obj="//@blocks.5/@node_objs.31" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="252" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.34"/>
+  <edges id="257" source_obj="//@ports.6" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="258" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.8/@node_objs.2"/>
+  <edges id="261" source_obj="//@ports.6" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="263" source_obj="//@blocks.4/@node_objs.14" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="267" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="269" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="271" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9/@node_objs.1"/>
+  <edges id="272" source_obj="//@blocks.8/@node_objs.0" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9/@node_objs.2"/>
+  <edges id="276" source_obj="//@blocks.9/@node_objs.1" sink_obj="//@blocks.9/@node_objs.3"/>
+  <edges id="279" source_obj="//@blocks.9/@node_objs.0" sink_obj="//@blocks.9/@node_objs.4"/>
+  <edges id="280" source_obj="//@blocks.9/@node_objs.4" sink_obj="//@ports.13"/>
+  <edges id="281" source_obj="//@blocks.9/@node_objs.3" sink_obj="//@blocks.9/@node_objs.5"/>
+  <edges id="282" source_obj="//@ports.7" sink_obj="//@blocks.9/@node_objs.5"/>
+  <edges id="284" source_obj="//@ports.8" sink_obj="//@blocks.9/@node_objs.6"/>
+  <edges id="286" source_obj="//@ports.9" sink_obj="//@blocks.9/@node_objs.7"/>
+  <edges id="287" source_obj="//@blocks.9/@node_objs.2" sink_obj="//@blocks.9/@node_objs.8"/>
+  <edges id="288" source_obj="//@blocks.9/@node_objs.8" sink_obj="//@ports.14"/>
+  <edges id="289" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@blocks.9/@node_objs.9"/>
+  <edges id="292" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@blocks.9/@node_objs.10"/>
+  <edges id="293" source_obj="//@ports.12" sink_obj="//@blocks.9/@node_objs.10"/>
+  <edges id="295" source_obj="//@ports.11" sink_obj="//@blocks.9/@node_objs.11"/>
+  <edges id="296" source_obj="//@blocks.9/@node_objs.9" sink_obj="//@blocks.9/@node_objs.12"/>
+  <edges id="297" source_obj="//@ports.10" sink_obj="//@blocks.9/@node_objs.12"/>
+  <edges id="299" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="300" source_obj="//@blocks.5/@node_objs.30" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="301" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="303" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="304" source_obj="//@blocks.5/@node_objs.33" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="305" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="306" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="307" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@ports.15"/>
+  <edges id="308" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="309" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@ports.16"/>
+  <edges id="311" source_obj="//@ports.5" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="312" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.4"/>
+  <edges id="317" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="319" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="320" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="321" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="322" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="323" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="324" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.8"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.7"/>
+  <edges id="326" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.9"/>
+  <edges id="328" edge_type="VirtEdge" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.8/@node_objs.0"/>
+  <edges id="329" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.10"/>
+  <edges id="330" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.9"/>
+  <edges id="331" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="332" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="333" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.4/@node_objs.11"/>
+  <edges id="334" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="335" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.8/@node_objs.1"/>
+  <edges id="336" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="337" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@blocks.9/@node_objs.5"/>
+  <edges id="338" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@blocks.9/@node_objs.6"/>
+  <edges id="339" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@blocks.9/@node_objs.7"/>
+  <edges id="340" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@blocks.9/@node_objs.12"/>
+  <edges id="341" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@blocks.9/@node_objs.11"/>
+  <edges id="342" edge_type="VirtEdge" source_obj="//@blocks.4/@node_objs.14" sink_obj="//@blocks.9/@node_objs.10"/>
+  <edges id="-119" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@ports.0"/>
+  <edges id="-120" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@ports.1"/>
+  <edges id="-122" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="-146" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@ports.3"/>
+  <edges id="-147" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@ports.4"/>
+  <edges id="-148" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.5"/>
+  <edges id="-150" source_obj="//@blocks.4/@node_objs.3" sink_obj="//@ports.0"/>
+  <edges id="-152" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@ports.1"/>
+  <edges id="-153" source_obj="//@blocks.4/@node_objs.5" sink_obj="//@ports.6"/>
+  <edges id="-154" source_obj="//@blocks.4/@node_objs.6" sink_obj="//@ports.7"/>
+  <edges id="-155" source_obj="//@blocks.4/@node_objs.7" sink_obj="//@ports.8"/>
+  <edges id="-156" source_obj="//@blocks.4/@node_objs.8" sink_obj="//@ports.9"/>
+  <edges id="-158" source_obj="//@blocks.4/@node_objs.9" sink_obj="//@ports.3"/>
+  <edges id="-160" source_obj="//@blocks.4/@node_objs.10" sink_obj="//@ports.4"/>
+  <edges id="-162" source_obj="//@blocks.4/@node_objs.11" sink_obj="//@ports.2"/>
+  <edges id="-163" source_obj="//@blocks.4/@node_objs.12" sink_obj="//@ports.10"/>
+  <edges id="-164" source_obj="//@blocks.4/@node_objs.13" sink_obj="//@ports.11"/>
+  <edges id="-165" source_obj="//@blocks.4/@node_objs.14" sink_obj="//@ports.12"/>
+  <edges id="-257" source_obj="//@blocks.8/@node_objs.1" sink_obj="//@ports.6"/>
+  <edges id="-261" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@ports.6"/>
+  <edges id="-282" source_obj="//@blocks.9/@node_objs.5" sink_obj="//@ports.7"/>
+  <edges id="-284" source_obj="//@blocks.9/@node_objs.6" sink_obj="//@ports.8"/>
+  <edges id="-286" source_obj="//@blocks.9/@node_objs.7" sink_obj="//@ports.9"/>
+  <edges id="-293" source_obj="//@blocks.9/@node_objs.10" sink_obj="//@ports.12"/>
+  <edges id="-295" source_obj="//@blocks.9/@node_objs.11" sink_obj="//@ports.11"/>
+  <edges id="-297" source_obj="//@blocks.9/@node_objs.12" sink_obj="//@ports.10"/>
+  <edges id="-311" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@ports.5"/>
+  <blocks id="24" name="block_24" type="BlockType">
+    <controlOutputObjs>block_29</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="wb_stage_instr_valid" lineNumber="25" originalName="wb_stage_instr.valid" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="1" opcode="load" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>MEM_WB_valid</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>MEM_WB_valid</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="wb_stage_instr_dest" lineNumber="25" originalName="wb_stage_instr.dest" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1633841004" contextFuncName="clock_cycle" bitwidth="2" opcode="load" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>MEM_WB_dest</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>MEM_WB_dest</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="sext_ln25" lineNumber="25" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="sext_ln25_fu_141_p1" coreId="1652308640" contextFuncName="clock_cycle" bitwidth="3" opcode="sext" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="operand2" lineNumber="25" originalName="operand2" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1685910811" contextFuncName="clock_cycle" bitwidth="1" opcode="load" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>MEM_WB_outVal_V</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>MEM_WB_outVal_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln28" lineNumber="28" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" opcode="br" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="28" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlInputObjs>block_29</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="29" name="block_29" type="BlockType">
+    <controlInputObjs>block_24</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge24</controlOutputObjs>
+    <controlOutputObjs>block_34</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="icmp_ln25" lineNumber="25" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln25_fu_150_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="icmp_ln25_1" lineNumber="25" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln25_1_fu_156_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="or_ln25" lineNumber="25" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="or_ln25_fu_162_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="or" m_display="0" m_delay="0.61" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="br_ln25" lineNumber="25" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1868721168" contextFuncName="clock_cycle" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="25" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>or</dataInputObjs>
+      <controlInputObjs>block_34</controlInputObjs>
+      <controlInputObjs>._crit_edge24</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="34" name="block_34" type="BlockType">
+    <controlInputObjs>block_29</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge24</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="sext_ln32" lineNumber="32" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="sext_ln32_fu_168_p1" coreId="1653266856" contextFuncName="clock_cycle" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="32" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="RegisterFile_V_addr" lineNumber="32" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1616950944" contextFuncName="clock_cycle" bitwidth="5" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="32" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="RegisterFile_V_addr_write_ln32" lineNumber="32" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="clock_cycle" opcode="store" m_display="0" m_delay="1.42" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="32" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="br_ln33" lineNumber="33" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1855311672" contextFuncName="clock_cycle" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="33" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <controlInputObjs>._crit_edge24</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>32</validLinenumbers>
+      <validLinenumbers>33</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="36" name="._crit_edge24" type="BlockType">
+    <controlInputObjs>block_29</controlInputObjs>
+    <controlInputObjs>block_34</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>._crit_edge</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="br_ln34" lineNumber="34" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="34" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>34</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="53" name="._crit_edge" type="BlockType">
+    <controlInputObjs>block_24</controlInputObjs>
+    <controlInputObjs>._crit_edge24</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>_ifconv</controlOutputObjs>
+    <controlOutputObjs>mergeST10</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="EX_MEM_valid_load" lineNumber="37" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="1" opcode="load" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>EX_MEM_valid</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>EX_MEM_valid</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="EX_MEM_dest_load" lineNumber="37" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" bitwidth="2" opcode="load" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>EX_MEM_dest</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>EX_MEM_dest</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="operand2_1" lineNumber="37" originalName="operand2" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="1" opcode="load" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>EX_MEM_outVal_V</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>EX_MEM_outVal_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="MEM_WB_valid_write_ln37" lineNumber="37" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>MEM_WB_valid</dataInputObjs>
+      <dataOutputObjs>MEM_WB_valid</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="MEM_WB_dest_write_ln37" lineNumber="37" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>MEM_WB_dest</dataInputObjs>
+      <dataOutputObjs>MEM_WB_dest</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="ID_EX_valid_load" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="1" opcode="load" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>ID_EX_valid</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>ID_EX_valid</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="ID_EX_src1_load" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="2" opcode="load" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>ID_EX_src1</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>ID_EX_src1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="ID_EX_src2_load" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="2" opcode="load" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>ID_EX_src2</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>ID_EX_src2</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="ID_EX_dest_load" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" bitwidth="2" opcode="load" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>ID_EX_dest</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>ID_EX_dest</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="EX_MEM_valid_write_ln57" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>EX_MEM_valid</dataInputObjs>
+      <dataOutputObjs>EX_MEM_valid</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="EX_MEM_dest_write_ln57" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>EX_MEM_dest</dataInputObjs>
+      <dataOutputObjs>EX_MEM_dest</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="MEM_WB_outVal_V_write_ln37" lineNumber="37" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>MEM_WB_outVal_V</dataInputObjs>
+      <dataOutputObjs>MEM_WB_outVal_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="PC_V_load" lineNumber="587" fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_unsigned_long_long" bitwidth="32" opcode="load" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h" linenumber="587" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="operator unsigned long long"/>
+      <dataInputObjs>PC_V</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>PC_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="IF_ID_valid_load" lineNumber="184" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="1" opcode="load" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="184" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>IF_ID_valid</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>IF_ID_valid</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="next_latch_pc_V" lineNumber="214" originalName="next_latch.pc.V" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="0" contextFuncName="clock_cycle" bitwidth="32" opcode="load" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="214" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>IF_ID_pc_V</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>IF_ID_pc_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="br_ln62" lineNumber="62" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" opcode="br" m_display="0" m_delay="1.02" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="62" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <controlInputObjs>mergeST10</controlInputObjs>
+      <controlInputObjs>_ifconv</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>587</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>37</validLinenumbers>
+      <validLinenumbers>57</validLinenumbers>
+      <validLinenumbers>184</validLinenumbers>
+      <validLinenumbers>214</validLinenumbers>
+      <validLinenumbers>62</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="89" name="_ifconv" type="BlockType">
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>mergeST10</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="icmp_ln65" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln65_fu_243_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="add_ln69" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="add_ln69_fu_249_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="clock_cycle" bitwidth="3" opcode="add" m_display="0" m_delay="1.0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>sext</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="tmp" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="tmp_fu_255_p4" coreId="0" contextFuncName="clock_cycle" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="icmp_ln69" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln69_fu_265_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="and_ln69" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln69_fu_271_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_delay="0.61" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="icmp_ln69_1" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln69_1_fu_277_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="and_ln69_1" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln69_1_fu_283_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_topoIndex="37" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="select_ln69" lineNumber="69" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="select_ln69_fu_289_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="clock_cycle" bitwidth="2" opcode="select" m_display="0" m_delay="0.62" m_topoIndex="38" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="69" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="icmp_ln65_1" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln65_1_fu_297_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="icmp_ln65_2" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln65_2_fu_303_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="and_ln65" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_fu_309_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_topoIndex="41" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="and_ln65_1" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_1_fu_315_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_topoIndex="42" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="and_ln65_2" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_2_fu_321_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_delay="0.61" m_topoIndex="43" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="select_ln65" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="select_ln65_fu_327_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="clock_cycle" bitwidth="2" opcode="select" m_display="0" m_delay="0.62" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="icmp_ln76" lineNumber="76" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln76_fu_335_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="76" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="icmp_ln65_3" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln65_3_fu_341_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="icmp_ln65_4" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln65_4_fu_347_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="xor_ln37" lineNumber="37" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="xor_ln37_fu_353_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="xor" m_display="0" m_delay="0.61" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="37" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="xor_ln65" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="xor_ln65_fu_359_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="xor" m_display="0" m_topoIndex="49" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="or_ln65" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="or_ln65_fu_365_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="or" m_display="0" m_topoIndex="50" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="or_ln65_1" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="or_ln65_1_fu_371_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="or" m_display="0" m_topoIndex="51" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="or_ln65_2" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="or_ln65_2_fu_377_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="or" m_display="0" m_topoIndex="52" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="and_ln65_3" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_3_fu_383_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_delay="0.61" m_topoIndex="53" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="select_ln65_1" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="select_ln65_1_fu_389_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="clock_cycle" bitwidth="2" opcode="select" m_display="0" m_topoIndex="54" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="icmp_ln80" lineNumber="80" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="icmp_ln80_fu_397_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="clock_cycle" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.64" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="80" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="and_ln80" lineNumber="80" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln80_fu_403_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_topoIndex="56" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="80" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="or_ln65_3" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="or_ln65_3_fu_409_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="or" m_display="0" m_topoIndex="57" m_clusterGroupNumber="6">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="and_ln65_4" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_4_fu_415_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_topoIndex="58" m_clusterGroupNumber="6">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="and_ln65_5" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_5_fu_421_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_topoIndex="59" m_clusterGroupNumber="6">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="and_ln65_6" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="and_ln65_6_fu_427_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="and" m_display="0" m_delay="0.61" m_topoIndex="60" m_clusterGroupNumber="6">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="select_ln65_2" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="select_ln65_2_fu_433_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="clock_cycle" bitwidth="2" opcode="select" m_display="0" m_delay="0.62" m_topoIndex="61" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="select_ln65_3" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="select_ln65_3_fu_442_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="clock_cycle" bitwidth="2" opcode="select" m_display="0" m_topoIndex="62" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="or_ln65_4" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="or_ln65_4_fu_450_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="clock_cycle" bitwidth="1" opcode="or" m_display="0" m_topoIndex="63" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>and</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="select_ln65_4" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="select_ln65_4_fu_456_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="clock_cycle" bitwidth="2" opcode="select" m_display="0" m_delay="0.62" m_topoIndex="64" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln175" lineNumber="175" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" opcode="br" m_display="0" m_delay="1.02" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="175" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <controlInputObjs>mergeST10</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>69</validLinenumbers>
+      <validLinenumbers>76</validLinenumbers>
+      <validLinenumbers>37</validLinenumbers>
+      <validLinenumbers>80</validLinenumbers>
+      <validLinenumbers>175</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="96" name="mergeST10" type="BlockType">
+    <controlInputObjs>._crit_edge</controlInputObjs>
+    <controlInputObjs>_ifconv</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>switch.edge</controlOutputObjs>
+    <controlOutputObjs>block_99</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="forward_A_sel_1_new_4" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1920605552" contextFuncName="clock_cycle" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlInputObjs>_ifconv</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="forward_B_sel_1_new_1" lineNumber="65" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" bitwidth="2" opcode="phi" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="65" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>._crit_edge</controlInputObjs>
+      <controlInputObjs>_ifconv</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="forward_B_sel_1_write_ln59" lineNumber="59" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="59" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>forward_B_sel_1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="forward_A_sel_1_write_ln58" lineNumber="58" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1856701264" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="58" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>forward_A_sel_1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="EX_MEM_outVal_V_write_ln57" lineNumber="57" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="clock_cycle" opcode="store" m_display="0" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="57" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>EX_MEM_outVal_V</dataInputObjs>
+      <dataOutputObjs>EX_MEM_outVal_V</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln184" lineNumber="184" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="539437428" contextFuncName="clock_cycle" opcode="br" m_display="0" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="184" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <controlInputObjs>block_99</controlInputObjs>
+      <controlInputObjs>switch.edge</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>65</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>58</validLinenumbers>
+      <validLinenumbers>57</validLinenumbers>
+      <validLinenumbers>184</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="99" name="block_99" type="BlockType">
+    <controlInputObjs>mergeST10</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>mergeST17</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="ID_EX_valid_write_ln41" lineNumber="41" fileName="../hls/pipeline_core_hls.h" fileDirectory=".." coreId="825911342" contextFuncName="reset" opcode="store" m_display="0" m_delay="1.02" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.h" linenumber="41" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="reset"/>
+      <dataInputObjs>ID_EX_valid</dataInputObjs>
+      <dataOutputObjs>ID_EX_valid</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="98" name="br_ln0" coreId="1852399472" opcode="br" m_display="0" m_delay="1.02" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <controlInputObjs>mergeST17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.h">
+      <validLinenumbers>41</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="103" name="switch.edge" type="BlockType">
+    <controlInputObjs>mergeST10</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>mergeST17</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="100" name="RegisterFile_V_load" lineNumber="270" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="clock_cycle" bitwidth="1" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.42" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="270" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="101" name="ID_EX_valid_write_ln274" lineNumber="274" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1914708521" contextFuncName="clock_cycle" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.02" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="274" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>ID_EX_valid</dataInputObjs>
+      <dataOutputObjs>ID_EX_valid</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="102" name="br_ln275" lineNumber="275" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="792347432" contextFuncName="clock_cycle" opcode="br" nodeLabel="2.0" m_display="0" m_delay="1.02" m_topoIndex="76" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="275" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <controlInputObjs>mergeST17</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>270</validLinenumbers>
+      <validLinenumbers>274</validLinenumbers>
+      <validLinenumbers>275</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="118" name="mergeST17" type="BlockType">
+    <controlInputObjs>block_99</controlInputObjs>
+    <controlInputObjs>switch.edge</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="104" name="storemerge18" originalName="next_latch.pc.V" coreId="1633836916" bitwidth="32" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>switch.edge</controlInputObjs>
+      <controlInputObjs>block_99</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="105" name="storemerge13" coreId="1869635840" bitwidth="1" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="7">
+      <dataOutputObjs>select</dataOutputObjs>
+      <controlInputObjs>switch.edge</controlInputObjs>
+      <controlInputObjs>block_99</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="106" name="storemerge9" lineNumber="270" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1953068146" contextFuncName="clock_cycle" bitwidth="1" opcode="phi" nodeLabel="2.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="270" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <controlInputObjs>switch.edge</controlInputObjs>
+      <controlInputObjs>block_99</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="107" name="select_ln41" lineNumber="41" fileName="../hls/pipeline_core_hls.h" fileDirectory=".." rtlName="select_ln41_fu_495_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="reset" bitwidth="2" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.62" m_topoIndex="80" m_clusterGroupNumber="7">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.h" linenumber="41" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="reset"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="108" name="ID_EX_pc_V_write_ln41" lineNumber="41" fileName="../hls/pipeline_core_hls.h" fileDirectory=".." coreId="1213932032" contextFuncName="reset" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.h" linenumber="41" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="reset"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>ID_EX_pc_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="109" name="ID_EX_src1_write_ln274" lineNumber="274" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1630027365" contextFuncName="clock_cycle" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="274" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>ID_EX_src1</dataInputObjs>
+      <dataOutputObjs>ID_EX_src1</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="110" name="ID_EX_src2_write_ln43" lineNumber="43" fileName="../hls/pipeline_core_hls.h" fileDirectory=".." coreId="1601465961" contextFuncName="reset" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.h" linenumber="43" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="reset"/>
+      <dataInputObjs>ID_EX_src2</dataInputObjs>
+      <dataOutputObjs>ID_EX_src2</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="111" name="ID_EX_dest_write_ln274" lineNumber="274" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="979906149" contextFuncName="clock_cycle" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="274" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>ID_EX_dest</dataInputObjs>
+      <dataOutputObjs>ID_EX_dest</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="112" name="ID_EX_val1_V_write_ln274" lineNumber="274" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1635000320" contextFuncName="clock_cycle" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="274" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>ID_EX_val1_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="113" name="add_ln291" lineNumber="291" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." rtlName="add_ln291_fu_533_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="clock_cycle" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="1.78" m_topoIndex="86" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="291" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="IF_ID_pc_V_write_ln41" lineNumber="41" fileName="../hls/pipeline_core_hls.h" fileDirectory=".." coreId="540960117" contextFuncName="reset" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="87" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.h" linenumber="41" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="reset"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>IF_ID_pc_V</dataInputObjs>
+      <dataOutputObjs>IF_ID_pc_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="IF_ID_valid_write_ln41" lineNumber="41" fileName="../hls/pipeline_core_hls.h" fileDirectory=".." coreId="1650422894" contextFuncName="reset" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="88" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.h" linenumber="41" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="reset"/>
+      <dataInputObjs>IF_ID_valid</dataInputObjs>
+      <dataOutputObjs>IF_ID_valid</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="116" name="PC_V_write_ln149" lineNumber="149" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1768712536" contextFuncName="clock_cycle" opcode="store" nodeLabel="2.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="149" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>PC_V</dataInputObjs>
+      <dataOutputObjs>PC_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="117" name="_ln293" lineNumber="293" fileName="../hls/pipeline_core_hls.cpp" fileDirectory=".." coreId="1970435104" contextFuncName="clock_cycle" opcode="ret" nodeLabel="2.0" m_display="0" m_topoIndex="90" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../hls/pipeline_core_hls.cpp" linenumber="293" fileDirectory="C:\Users\sreer\Post-Silicon-Validation-Research-Project\new_cpu_implementation\vitis" functionName="clock_cycle"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.h">
+      <validLinenumbers>41</validLinenumbers>
+      <validLinenumbers>43</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="../hls/pipeline_core_hls.cpp">
+      <validLinenumbers>270</validLinenumbers>
+      <validLinenumbers>274</validLinenumbers>
+      <validLinenumbers>291</validLinenumbers>
+      <validLinenumbers>149</validLinenumbers>
+      <validLinenumbers>293</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="storemerge13_reg_109">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="storemerge18_reg_98">
+    <nodeIds>104</nodeIds>
+  </regnodes>
+  <regnodes realName="storemerge9_reg_121">
+    <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="IF_ID_valid_load_reg_567">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="forward_B_sel_1_new_1_reg_88">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="forward_A_sel_1_new_4_reg_78">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <expressionNodes realName="select_ln41_fu_495">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="storemerge13_phi_fu_113">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="storemerge9_phi_fu_125">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln65_3_fu_442">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_255">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln69_1_fu_283">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_fu_365">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln37_fu_353">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln25_fu_162">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln65_1_fu_389">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_3_fu_341">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_2_fu_321">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_6_fu_427">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln69_1_fu_277">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_4_fu_347">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln69_fu_289">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_3_fu_383">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_3_fu_409">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_2_fu_303">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_5_fu_421">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="storemerge18_phi_fu_102">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_fu_309">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="forward_A_sel_1_new_4_phi_fu_81">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_4_fu_450">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln65_4_fu_456">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln80_fu_403">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln291_fu_533">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_1_fu_371">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln25_fu_150">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln65_fu_327">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln69_fu_265">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln25_1_fu_156">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln65_2_fu_433">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln32_fu_168">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln69_fu_271">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_4_fu_415">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="RegisterFile_V_addr_gep_fu_64">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_fu_243">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln76_fu_335">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln80_fu_397">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_2_fu_377">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln69_fu_249">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_1_fu_297">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln25_fu_141">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln65_fu_359">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_1_fu_315">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="forward_B_sel_1_new_1_phi_fu_91">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln58_store_fu_471">
+    <nodeIds>93</nodeIds>
+  </ioNodes>
+  <ioNodes realName="IF_ID_valid_load_load_fu_235">
+    <nodeIds>50</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln41_store_fu_503">
+    <nodeIds>108</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln57_store_fu_477">
+    <nodeIds>94</nodeIds>
+  </ioNodes>
+  <ioNodes realName="PC_V_load_load_fu_231">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln57_store_fu_213">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ID_EX_dest_load_load_fu_209">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln41_store_fu_543">
+    <nodeIds>115</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ID_EX_src1_load_load_fu_201">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln274_store_fu_489">
+    <nodeIds>101</nodeIds>
+  </ioNodes>
+  <ioNodes realName="EX_MEM_valid_load_load_fu_173">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln274_store_fu_521">
+    <nodeIds>111</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln37_store_fu_185">
+    <nodeIds>40</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln274_store_fu_527">
+    <nodeIds>112</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln37_store_fu_225">
+    <nodeIds>48</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln274_store_fu_509">
+    <nodeIds>109</nodeIds>
+  </ioNodes>
+  <ioNodes realName="wb_stage_instr_dest_load_fu_137">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ID_EX_src2_load_load_fu_205">
+    <nodeIds>44</nodeIds>
+  </ioNodes>
+  <ioNodes realName="ID_EX_valid_load_load_fu_197">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln149_store_fu_549">
+    <nodeIds>116</nodeIds>
+  </ioNodes>
+  <ioNodes realName="next_latch_pc_V_load_fu_239">
+    <nodeIds>51</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln41_store_fu_538">
+    <nodeIds>114</nodeIds>
+  </ioNodes>
+  <ioNodes realName="EX_MEM_dest_load_load_fu_177">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln59_store_fu_465">
+    <nodeIds>92</nodeIds>
+  </ioNodes>
+  <ioNodes realName="wb_stage_instr_valid_load_fu_133">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="operand2_load_fu_145">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln43_store_fu_515">
+    <nodeIds>110</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln41_store_fu_483">
+    <nodeIds>97</nodeIds>
+  </ioNodes>
+  <ioNodes realName="operand2_1_load_fu_181">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln37_store_fu_191">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln57_store_fu_219">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="RegisterFile_V">
+    <nodeIds>32</nodeIds>
+    <nodeIds>100</nodeIds>
+  </memoryPorts>
+  <ioPorts name="EX_MEM_dest"/>
+  <ioPorts name="EX_MEM_outVal_V"/>
+  <ioPorts name="EX_MEM_valid"/>
+  <ioPorts name="ID_EX_dest"/>
+  <ioPorts name="ID_EX_pc_V"/>
+  <ioPorts name="ID_EX_src1"/>
+  <ioPorts name="ID_EX_src2"/>
+  <ioPorts name="ID_EX_val1_V"/>
+  <ioPorts name="ID_EX_valid"/>
+  <ioPorts name="IF_ID_pc_V"/>
+  <ioPorts name="IF_ID_valid"/>
+  <ioPorts name="MEM_WB_dest"/>
+  <ioPorts name="MEM_WB_outVal_V"/>
+  <ioPorts name="MEM_WB_valid"/>
+  <ioPorts name="PC_V"/>
+  <ioPorts name="forward_A_sel_1"/>
+  <ioPorts name="forward_B_sel_1"/>
+  <fsm>
+    <states id="1">
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="100" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="100" stage="1" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="clock_cycle" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="2">
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>29</basicBlocks>
+      <basicBlocks>34</basicBlocks>
+      <basicBlocks>36</basicBlocks>
+      <basicBlocks>53</basicBlocks>
+      <basicBlocks>89</basicBlocks>
+      <basicBlocks>96</basicBlocks>
+      <basicBlocks>99</basicBlocks>
+      <basicBlocks>103</basicBlocks>
+      <basicBlocks>118</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
