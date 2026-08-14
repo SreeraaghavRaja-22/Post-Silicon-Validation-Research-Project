@@ -1,0 +1,61 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2021.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'sreer' on host 'aurora' (Windows NT_amd64 version 6.2) on Fri Aug 14 15:51:29 -0400 2026
+INFO: [HLS 200-10] In directory 'C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis'
+Sourcing Tcl script 'C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project PSV_HLS 
+INFO: [HLS 200-10] Opening project 'C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS'.
+INFO: [HLS 200-1510] Running: set_top pipeline_top 
+INFO: [HLS 200-1510] Running: add_files ../hls/pipeline_core_hls.cpp 
+INFO: [HLS 200-10] Adding design file '../hls/pipeline_core_hls.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files ../hls/pipeline_core_hls.h 
+INFO: [HLS 200-10] Adding design file '../hls/pipeline_core_hls.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../hls/test/testbench_hls.cpp 
+INFO: [HLS 200-10] Adding test bench file '../hls/test/testbench_hls.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution RAW_solu -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'C:/Users/sreer/Post-Silicon-Validation-Research-Project/new_cpu_implementation/vitis/PSV_HLS/RAW_solu'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2021.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7k70tfbv676-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+---Starting Pipeline Simulation (HLS-oriented core)---
+Cycle: 1 | PC: 4 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 2 | PC: 8 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 3 | PC: 12 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 4 | PC: 16 | Stall: NO | x3: 0 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 5 | PC: 20 | Stall: NO | x3: 30 | x5: 0 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 6 | PC: 24 | Stall: NO | x3: 30 | x5: 35 | x6: 0 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 7 | PC: 28 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 0 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 8 | PC: 32 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 9 | PC: 36 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 0 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 10 | PC: 40 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 11 | PC: 44 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 12 | PC: 44 | Stall: YES | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 0 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 13 | PC: 48 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 0 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 14 | PC: 52 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 15 | PC: 56 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 0 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 16 | PC: 60 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 0 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 17 | PC: 64 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 18 | PC: 68 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 0 | x20: 0 | x21: 0 | x22: 0
+Cycle: 19 | PC: 72 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 0 | x20: 64 | x21: 0 | x22: 0
+Cycle: 20 | PC: 76 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 0
+Cycle: 21 | PC: 80 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 0
+Cycle: 22 | PC: 84 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 23 | PC: 88 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 24 | PC: 92 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 25 | PC: 96 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 26 | PC: 100 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 27 | PC: 104 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 28 | PC: 108 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 29 | PC: 112 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Cycle: 30 | PC: 116 | Stall: NO | x3: 30 | x5: 35 | x6: 110 | x7: 25 | x8: 110 | x9: 0 | x10: 42 | x11: 110 | x12: 111 | x13: 48 | x17: 0 | x19: 60 | x20: 64 | x21: 0 | x22: 77
+Trace log written to raw_hazard_trace_hls.csv (30 cycles)
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 255.453 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 1.171 seconds; peak allocated memory: 696.297 MB.

@@ -113,6 +113,7 @@ void clock_cycle();
 // Top Level wrapper for synthesis. THis shows the most important external signals
 // for Post-Silicon visibility.
 void pipeline_top(
+    bool reset,
     bool& stall_out, 
     int& forward_A_sel_out,
     int& forward_B_sel_out, 

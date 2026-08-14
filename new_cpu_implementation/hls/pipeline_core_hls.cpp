@@ -294,12 +294,14 @@ void clock_cycle(){
 
 // Top Level Signal definitons 
 void pipeline_top(
+    bool reset,
     bool& stall_out, 
     int& forward_A_sel_out,
     int& forward_B_sel_out, 
     int& hazard_dest_out,
     ap_uint<32>& pc_out
 ){
+    #pragma HLS INTERFACE ap_none port=reset
     #pragma HLS INTERFACE ap_none port=stall_out
     #pragma HLS INTERFACE ap_none port=forward_A_sel_out
     #pragma HLS INTERFACE ap_none port=forward_B_sel_out
@@ -307,8 +309,26 @@ void pipeline_top(
     #pragma HLS INTERFACE ap_none port=pc_out
     #pragma HLS INTERFACE ap_ctrl_hs port=return
 
-    clock_cycle();
 
+    if(reset){
+        // Clear pipeline latches to initial state
+        IF_ID.reset();
+        ID_EX.reset();
+        EX_MEM.reset();
+        MEM_WB.reset();
+
+        // clear control/status variables
+        pipeline_stall = false;
+        forward_A_sel = FWD_NONE;
+        forward_B_sel = FWD_NONE;
+        hazard_dest = -1;
+        PC = 0; 
+    }
+    else{
+        clock_cycle();
+    }
+    
+    // Assign output ports
     stall_out = pipeline_stall;
     forward_A_sel_out = forward_A_sel;
     forward_B_sel_out = forward_B_sel;
